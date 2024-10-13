@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>  <!-- INICIA MI PAGINA-->
+
+<head> <!-- Comienza Informacion tecnica para el navegador-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="IMG/MA.jpeg" /> <!-- FOTO MINIATURA DE LA PAGINA -->
+    <title> PORTAL - MARLON</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
+    <!-- Bootstrap 3.3.6 -->
+    <link rel="stylesheet" href="CSS/Bootstrap 1.css">
+    <link rel="stylesheet" href="CSS/Bootstrap 2.css">
+    <link rel="stylesheet" href="CSS/Bootstrap 3.css">
+    <link rel="stylesheet" href="CSS/Bootstrap 4.css">
+    <link rel="stylesheet" href="CSS/Bootstrap 5.css">
+    <link rel="stylesheet" href="CSS/Bootstrap 6.css">
+
+    <!-- calendar -->
+    <link rel="stylesheet" href="CSS/Calendar 1.css">
+    <link rel="stylesheet" href="CSS/Calendar 2.css">
+    <link rel="stylesheet" href="CSS/Calendar 3.css">
+
+    <!-- jQuery 2.2.3 - SCRIPT-->
+     <script src="SCRIPT/JQuery 1.js"> </script>
+     <script src="SCRIPT/JQuery 2.js"> </script>
+     <script src="SCRIPT/JQuery 3.js"> </script>
+     <script src="SCRIPT/JQuery 4.js"> </script>
+     <script src="SCRIPT/JQuery 5.js"> </script>
+     <script src="SCRIPT/JQuery 6.js"> </script>
+    
+
+    <script>
+        $.widget.bridge('uibutton', $.ui.button);
+    </script>
+
+    <!-- Sparkline -->
+     <script src="SCRIPT/Sparkline 1.js"> </script>
+
+    <!-- jQuery Knob Chart -->
+     <script src="SCRIPT/JQuery Knob 1.js"> </script>
+
+    
+    <style type="text/css">
+        .enlace{
+            cursor: pointer;
+        }
+    </style>
+
+</head> <!-- Termina Informacion tecnica para el navegador-->
+
+<body class="skin-blue"> <!-- CONTENIDO DE LA PAGINA............................................................................ -->
+    <div class="wrapper">
+        <header class="main-header">
+            <a href="index.html" class="logo"> 
+                <span class="logo-lg"><b> MARLON </b></span>
+            </a>
+
+            <nav  class="navbar navbar-static-top">
+                <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                </a>
+                <div class="navbar-custom-menu">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown user user-menu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <!-- VER PERFIL -->
+                                <span><i class="fa fa-user"></i> Perfil</span>
+                            </a> 
+
+                            <ul class="dropdown-menu">
+                               <li class="user-header"> <!-- FOTO DE PERFIL-->
+                                    <img src="#" class="img-circle" alt="User Image">
+                                    <br>
+                                    <P class="text-white">
+                                        <small>
+                                            INGENIERIA EN SISTEMAS. || PLAN 2022-2026
+                                        </small>
+                                    </P>
+                               </li>
+                               <Li class="user-footer"> <!-- VENTANA DE PERFIL-->
+                                    <div class="pull-left">
+                                        <a href="PERFIL/Perfil.php" id="PERFIL/Perfil.php" class="btn btn-primary btn-flat enlace">
+                                            <b>
+                                                Perfil
+                                            </b>
+                                            <br>
+                                        </a>
+                                    </div>
+                                    <div class="pull-right">
+                                        <a class="btn btn-primary btn-flat cerrar_session">
+                                            <b>
+                                                Cerrar Sesion
+                                            </b>
+                                        </a>
+                                    </div>
+                               </Li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header> <!-- FIN PRIMERA PARTE-->
+
+        <aside class="main-sidebar"> <!-- INICIO DE MENU IZQUIERDO -->
+            <section class="sidebar">
+                <div class="user-panel">
+                    <div class="text-center"> <!-- FOTO CIRCULAR DE PERFIL-->
+                        <img src="PERFIL/Marlon.jpg" class="img-circle" alt="User Image" Height="150px" Width="75px">
+                    </div>
+                    <div class="pull-left info">
+                        <P>
+                            MARLON RAMOS
+                        </P>
+                        <strong>
+                            CUM:
+                            <strong>
+                                10.00
+                            </strong>
+                            <br>
+                        </strong>
+                    </div>
+                </div>
+
+                <ul> <!-- BARRA -->
+                    <li>
+                        <a>
+                            <i 
+                            class="fa fa-file-text-o">
+                            </i>
+                            <span> PREINSCRIPCIÓN </span>
+                        </a>
+                    </li>
+                    <li> <!-- PAGOS EN LINEA -->
+                        <a>
+                            <i class="fa fa-credit-card">
+                            </i>
+                            <span> PAGOS EN LINEA </span>
+                        </a>
+                    </li>
+                    <li> <!-- SERVICIOS EN LINEA -->
+                        <a>
+                            <i class="fa fa-folder"></i> <span>SERVICIOS EN LÍNEA</span>
+                        </a>
+                        <ul>
+                            <a>
+                                <span>
+                                    SOLICITUD DE SERVICIO SOCIAL
+                                </span>
+                            </a>
+                        </ul>
+                        <ul>
+                            <a>
+                                <span>
+                                    SOLICITUD DE EXAMENES
+                                </span>
+                            </a>
+                        </ul>
+                        <ul>
+                            <a>
+                                <span>
+                                    TRAMITES ACADEMICOS
+                                </span>
+                            </a>
+                        </ul>
+                        <ul>
+                            <a>
+                                <span>
+                                    CITAS PSICOLOGICAS
+                                </span>
+                            </a>
+                        </ul>
+                    </li> <!-- FIN SERVICIOS EN LINEA -->
+                    <li>
+                        <a>
+                            <span>
+                                EVALUACIÓN DOCENTE
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <span>
+                                EVALUACIÓN SERVICIOS
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <span>
+                                HOJA DE ASESORIA
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <span>
+                                PLANES DE ESTUDIO
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <span>
+                                HORARIOS
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <span>
+                                JORNALIZACIONES
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <span>
+                                SERVICIOS
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <span>
+                                RECORD ACEDEMICO
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <span>
+                                RECORD ACEDEMICO PRE
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <span>
+                                NOTAS
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <span>
+                                PAGOS REALIZADOS
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <span>
+                                DOCUMENTOS
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <span>
+                                EXPEDIENTE
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="cerrar_session">
+                            <i class="fa fa-power-off"></i>
+                            <span>
+                                CERRAR SESION
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        </aside>
+
+        <div class="content-wrapper"> <!-- INICIA PARTE LATERAL DERECHA -->
+            <div>
+                <span>
+                    <img src="IMG/MA.jpeg" alt="">
+                    Cargando...
+                </span>
+            </div>
+
+            <section class="content" id="contenido">
+                <br>
+                <div class="row">
+                    <div class="enlace col-xs-12 col-sm-4 col-md-3 col-lg-3 col-xl-3">
+                        <div class="small-box bg-blue-gradient">
+                            <div class="inner">
+                                <h3>&nbsp;&nbsp;</h3>
+                                <p>
+                                    EVALUACIÓN DOCENTE
+                                </p>
+                            </div>
+                            <div class="icon">
+                                <i class="fa fa-check-square"></i>
+                            </div>
+                            <p class="small-box-footer">
+                                Disponible 
+                                <i class="fa fa-arrow-circle-right"></i>
+                            </p>
+                        </div>
+                    </div> <!-- FIN EVALUACION DOCENTE-->
+
+                    <div class="enlace col-xs-12 col-sm-4 col-md-3 col-lg-3 col-xl-3" id="vista/planes.php">
+                        <div class="small-box bg-aqua">
+                            <div class="inner">
+                                <h3>&nbsp;&nbsp;</h3>
+                                <p> PLANES DE ESTUDIO </p>
+                            </div>
+                            <div class="icon">
+                                <i class="fa fa-dashboard"></i>
+                            </div>
+                            <p class="small-box-footer">
+                                Ver 
+                                <i class="fa fa-arrow-circle-right"></i>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+
+        <footer class="main-footer"> <!-- PARTE BAJA DE LA PAGINA-->
+            <div class="pull-right hidden-xs">
+                <b>Version</b> 1.1
+            </div>
+            <strong>
+                Copyright - MARLON RAMOS &copy; 2025 - INSTAGRAM <a href="https://www.instagram.com/marlon_ramos_31/profilecard/?igsh=cnhnenplMHd5bWg3" target="_blank"> MARLON RAMOS </a>.</strong> Todos los derechos reservados.
+            </strong>
+        </footer>
+
+    </div>
+</body>
+
+</html> <!-- FINALIZA MI PAGINA-->
