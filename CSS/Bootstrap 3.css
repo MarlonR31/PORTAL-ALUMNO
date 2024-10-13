@@ -1,0 +1,10 @@
+#cargando, #cargando_g{
+    display: none;
+}
+
+img{
+	cursor: pointer;
+}
+.form-control{
+	text-transform:uppercase;
+}

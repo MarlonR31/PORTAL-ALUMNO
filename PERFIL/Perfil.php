@@ -1,7 +1,7 @@
 <?php
 // Datos del perfil
-$nombre = "Stiven"; // Cambia esto por tu nombre
-$edad = 25; // Cambia esto por tu edad
+$nombre = "Marlon Stiven Ramos Vásquez"; // Cambia esto por tu nombre
+$edad = 22; // Cambia esto por tu edad
 $descripcion = "Soy un entusiasta de la programación y me gusta aprender sobre nuevas tecnologías."; // Cambia esto por tu descripción
 ?>
 
