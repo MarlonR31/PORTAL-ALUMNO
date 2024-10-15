@@ -63,7 +63,7 @@
             </h4>
         </div>
     
-        <div>
+        <div class="oculto" id="contenidoOpcion1">
             <div class="container">
                 <h4 class="derecha">
                     TECNOLOGIAS DE LA INFORMACION
@@ -125,48 +125,129 @@
                 <H4 class="izquierda">
                     10.00
                 </H4>
+            </div> <!-- FIN DE PRIMER MATERIA-->
+
+            <div class="container">
+                <h4 class="derecha">
+                    MATEMATICA I
+                </h4>
+                <!-- LABORATORIOS-->
+                <h4 class="izquierda">
+                    10
+                </h4>
+                <h4 class="izquierda">
+                    10
+                </h4>
+                <h4 class="izquierda">
+                    10
+                </h4>
+                <!-- PARCIALES-->
+                <h4 class="izquierda">
+                    10
+                </h4>
+                <h4 class="izquierda">
+                    10
+                </h4>
+                <h4 class="izquierda">
+                    10
+                </h4>
+                <H4 class="izquierda">
+                    0
+                </H4>
+                <H4 class="izquierda">
+                    10.00
+                </H4>
+            </div>
+
+            <div class="container">
+                <h4 class="derecha">
+                    PSICOLOGIA GENERAL
+                </h4>
+                <!-- LABORATORIOS-->
+                <h4 class="izquierda">
+                    10
+                </h4>
+                <h4 class="izquierda">
+                    10
+                </h4>
+                <h4 class="izquierda">
+                    10
+                </h4>
+                <!-- PARCIALES-->
+                <h4 class="izquierda">
+                    10
+                </h4>
+                <h4 class="izquierda">
+                    10
+                </h4>
+                <h4 class="izquierda">
+                    10
+                </h4>
+                <H4 class="izquierda">
+                    0
+                </H4>
+                <H4 class="izquierda">
+                    10.00
+                </H4>
+            </div>
+
+            <div class="container">
+                <h4 class="derecha">
+                    ECONOMIA I
+                </h4>
+                <!-- LABORATORIOS-->
+                <h4 class="izquierda">
+                    10
+                </h4>
+                <h4 class="izquierda">
+                    10
+                </h4>
+                <h4 class="izquierda">
+                    10
+                </h4>
+                <!-- PARCIALES-->
+                <h4 class="izquierda">
+                    10
+                </h4>
+                <h4 class="izquierda">
+                    10
+                </h4>
+                <h4 class="izquierda">
+                    10
+                </h4>
+                <H4 class="izquierda">
+                    0
+                </H4>
+                <H4 class="izquierda">
+                    10.00
+                </H4>
+            </div>
+    
+            <div id="contenidoOpcion2" class="oculto">
+                <P>
+                    NO DISPONIBLE...
+                </P>
             </div>
         </div>
 
-        <div id="contenidoOpcion1" class="oculto"> <!-- CICLO 01 - 2021-->
-            <P class="container">
-            </P>
-            <p>
-                CONTABILIDAD
-            </p>
-            <P>
-                MATEMATICA I
-            </P>
-            <P>
-                PROBLEMAS Y ALGORITOS
-            </P>
-            <p>
-                ECONOMIA
-            </p>
-        </div>
-    
-        <div id="contenidoOpcion2" class="oculto">
-            <p>Has seleccionado la Opción 2. Aquí está el contenido relacionado.</p>
-        </div>
-    </div>
+        <!-- SCRIPT PARA SELECCIONAR CICLO-->
+        <script> 
+            function mostrarContenido() {
+                // Obtener el valor seleccionado
+                const seleccion = document.getElementById('opciones').value;
 
-    <script>
-        function mostrarContenido() {
-            // Obtener el valor seleccionado
-            const seleccion = document.getElementById('opciones').value;
+                // Ocultar todos los contenidos
+                document.getElementById('contenidoOpcion1').classList.add('oculto');
+                document.getElementById('contenidoOpcion2').classList.add('oculto');
 
-            // Ocultar todos los contenidos
-            document.getElementById('contenidoOpcion1').classList.add('oculto');
-            document.getElementById('contenidoOpcion2').classList.add('oculto');
-
-            // Mostrar el contenido correspondiente
-            if (seleccion === 'opcion1') {
-                document.getElementById('contenidoOpcion1').classList.remove('oculto');
-            } else if (seleccion === 'opcion2') {
-                document.getElementById('contenidoOpcion2').classList.remove('oculto');
+                // Mostrar el contenido correspondiente
+                if (seleccion === 'opcion1') {
+                    document.getElementById('contenidoOpcion1').classList.remove('oculto');
+                } else if (seleccion === 'opcion2') {
+                    document.getElementById('contenidoOpcion2').classList.remove('oculto');
+                }
             }
-        }
-    </script>
+        </script>
 
     </div>
 </body>
