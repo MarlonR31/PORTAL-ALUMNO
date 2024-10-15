@@ -1,0 +1,33 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.menu {
+    width: 300px; /* Tamaño original para escritorio */
+}
+
+.dropdown-content {
+    display: none; /* Oculto por defecto */
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+.toggle-button {
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.toggle-button:hover {
+    background-color: #0056b3;
+}
+
+/* Media query para dispositivos móviles */
+@media (max-width: 600px) {
+    .menu {
+        width: 100%; /* Ocupa el ancho completo en móviles */
+    }
+}

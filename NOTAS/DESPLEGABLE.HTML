@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Menú Desplegable</title>
+</head>
+<body>
+    <div class="menu">
+        <button class="toggle-button">Abrir Menú</button>
+        <div class="dropdown-content">
+            <p>Elemento 1</p>
+            <p>Elemento 2</p>
+            <p>Elemento 3</p>
+        </div>
+    </div>
+    <DIV>
+        HOLA
+    </DIV>
+
+    <script>
+    document.querySelector('.toggle-button').addEventListener('click', function() {
+    const dropdown = document.querySelector('.dropdown-content');
+    dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+});
+    </script>
+</body>
+</html>
