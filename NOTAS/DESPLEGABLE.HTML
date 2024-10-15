@@ -3,27 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Menú Desplegable</title>
+    <title>División Vertical</title>
+    <style>
+        body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex; /* Usa flexbox para dividir el espacio */
+    height: 100vh; /* Altura completa de la ventana */
+}
+
+.lado-izquierdo {
+    background-color: #4CAF50; /* Color de fondo verde */
+    width: 50%; /* Toma el 50% del ancho */
+    padding: 20px; /* Espaciado interno */
+    color: white; /* Color del texto */
+}
+
+.lado-derecho {
+    background-color: #2196F3; /* Color de fondo azul */
+    width: 25%; /* Toma el 50% del ancho */
+    padding: 20px; /* Espaciado interno */
+    color: white; /* Color del texto */
+}
+    </style>
 </head>
 <body>
-    <div class="menu">
-        <button class="toggle-button">Abrir Menú</button>
-        <div class="dropdown-content">
-            <p>Elemento 1</p>
-            <p>Elemento 2</p>
-            <p>Elemento 3</p>
-        </div>
+    <div class="container">
+        <div class="lado-izquierdo">Izquierda</div>
+        <div class="lado-derecho">Derecha</div>
     </div>
-    <DIV>
-        HOLA
-    </DIV>
-
-    <script>
-    document.querySelector('.toggle-button').addEventListener('click', function() {
-    const dropdown = document.querySelector('.dropdown-content');
-    dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
-});
-    </script>
 </body>
 </html>
