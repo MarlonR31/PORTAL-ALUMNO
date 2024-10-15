@@ -1,0 +1,72 @@
+body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .Contorno {
+            max-width: 1080px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 8px; /* FORMA REDONDA*/
+        }
+
+        .Encabezado {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            border-radius: 8px 8px 0 0;
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+
+        .Seccion {
+            margin-bottom: 20px;
+        }
+
+        .Seccion-titulo {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+
+        .row label {
+            width: 150px; /* Ancho fijo para las etiquetas */
+            font-weight: bold; 
+        }
+
+        .row input, .row select {
+            flex-grow: 1; /* Permite que el input ocupe el espacio restante */
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .subject-list {
+            border-collapse: collapse; /* Elimina espacios entre celdas */
+            width: 100%; /* Ocupa el ancho completo */
+        }
+
+        .subject-list th, .subject-list td {
+            padding: 10px; /* Espaciado interno */
+            text-align: left; /* Alineación a la izquierda */
+            border-bottom: 1px solid #ddd; /* Línea inferior */
+        }
+
+        .subject-list th {
+            background-color: #007bff; /* Color del encabezado */
+            color: white; /* Color del texto del encabezado */
+        }

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan de Estudios</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+
+        .header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            border-radius: 8px 8px 0 0;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .section-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+
+        .row label {
+            width: 150px; /* Ancho fijo para las etiquetas */
+            font-weight: bold; 
+        }
+
+        .row input, .row select {
+            flex-grow: 1; /* Permite que el input ocupe el espacio restante */
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .subject-list {
+            border-collapse: collapse; /* Elimina espacios entre celdas */
+            width: 100%; /* Ocupa el ancho completo */
+        }
+
+        .subject-list th, .subject-list td {
+            padding: 10px; /* Espaciado interno */
+            text-align: left; /* Alineación a la izquierda */
+            border-bottom: 1px solid #ddd; /* Línea inferior */
+        }
+
+        .subject-list th {
+            background-color: #007bff; /* Color del encabezado */
+            color: white; /* Color del texto del encabezado */
+        }
+    </style>
+</head> 
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Plan de Estudios</h1>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Información General</h2>
+            <div class="row">
+                <label for="nombre">
+                    Nombre:
+                </label>
+                <input type="text" id="nombre" placeholder="Tu nombre aquí">
+            </div>
+            
+            <div class="row">
+                <label for="grado">Grado:</label>
+                <select id="grado">
+                    <option value="">Selecciona un grado</option>
+                    <option value="1">Primer Grado</option>
+                    <option value="2">Segundo Grado</option>
+                    <!-- Agrega más opciones según sea necesario -->
+                </select>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Asignaturas</h2>
+            <table class="subject-list">
+                <thead>
+                    <tr>
+                        <th>Asignatura</th>
+                        <th>Horas Semanales</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Matemáticas</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>Ciencias</td>
+                        <td>4</td>
+                    </tr>
+                    <!-- Agrega más filas según sea necesario -->
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+</body>
+</html>
+
