@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Selección</title>
+    <link rel="stylesheet" href="Notas.css">
+</head>
+<body>
+    <div>
+        <p class="Contorno">
+            NOTAS
+        </p>
+    </div>
+
+    <div class="Contorno">
+        <label for="opciones">Selecciona una opción:</label>
+    <select id="opciones" onchange="mostrarContenido()">
+        <option value="">--Seleccione--</option>
+        <option value="opcion1">Opción 1</option>
+        <option value="opcion2">Opción 2</option>
+    </select>
+
+    <div id="contenidoOpcion1" class="oculto">
+        <p> HOLA HOLA Has seleccionado la Opción 1. Aquí está el contenido relacionado. HOLA MI NOMBRE ES MARLON STIVEN RAMOS</p>
+    </div>
+
+    <div id="contenidoOpcion2" class="oculto">
+        <p>Has seleccionado la Opción 2. Aquí está el contenido relacionado.</p>
+    </div>
+
+    <script>
+        function mostrarContenido() {
+            // Obtener el valor seleccionado
+            const seleccion = document.getElementById('opciones').value;
+
+            // Ocultar todos los contenidos
+            document.getElementById('contenidoOpcion1').classList.add('oculto');
+            document.getElementById('contenidoOpcion2').classList.add('oculto');
+
+            // Mostrar el contenido correspondiente
+            if (seleccion === 'opcion1') {
+                document.getElementById('contenidoOpcion1').classList.remove('oculto');
+            } else if (seleccion === 'opcion2') {
+                document.getElementById('contenidoOpcion2').classList.remove('oculto');
+            }
+        }
+    </script>
+
+    </div>
+</body>
+</html>

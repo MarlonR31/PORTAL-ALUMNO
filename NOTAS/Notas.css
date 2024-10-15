@@ -1,0 +1,11 @@
+.oculto {
+    display: none; /* Oculta los elementos por defecto */
+}
+
+.Contorno {
+    width: 100%;
+    margin: auto;
+    padding: auto;
+    
+    border-radius: 8px; /* FORMA REDONDA*/
+}
