@@ -7,13 +7,6 @@
         <title>
             Plan de Estudio
         </title>
-
-        <style>
-            .oculto {
-                display: none; /* Oculta los elementos por defecto */
-            }
-        </style>
-
     </head>
 
     <body>
@@ -32,68 +25,98 @@
             </h2>
             <div class="row">
                 <label>
+                    FACULTAD:
+                </label>
+                <label>
+                    FACULTAD DE INGENIERIA Y ARQUITECTURA
+                </label>
+            </div>
+            <div class="row">
+                <label>
                     CARRERA:
                 </label>
                 <label>
                     INGENIERIA EN SISTEMAS INFORMATICOS
                 </label>
-            </div>
+            </div> <br>
+            <div class="row">
+                <label>
+                    PLAN:
+                </label>
+                <label>
+                    PLAN 2022 - 2026
+                </label>
+                <label>
+                    CICLOS:
+                </label>
+                <label>
+                    10
+                </label>
+            </div> <br>
+            <div class="row"> <!-- MODALIDAD -->
+                <label>
+                    MODALIDAD:
+                </label>
+                <label>
+                    PRESENCIAL
+                </label>
+                <label>
+                    TOTAL ASIGNATURAS:
+                </label>
+                <label>
+                    45
+                </label>
+            </div> <br>
 
             <div class="row">
                 <label for="grado">
                     Grado:
-                    <select id="opciones" onchange="mostrarContenido"> 
+                    <select id="opciones" onchange="mostrarContenido()"> 
                         <option value="">
                             Seleccionar ciclo
                         </option>
                         <option value="Ciclo1-2021">
                             Ciclo 1 - 2021
                         </option>
-                        <option value="">
+                        <option value="Ciclo2-2021">
                             Ciclo 2 - 2021
                         </option>
                     </select>
+
+                    <div>
+                        <h2>
+                            Asignaturas
+                        </h2>
+                    </div>
+
+                    <div id="Ciclo1" class="oculto0">
+                        <p>
+                            - Programación 1
+                        </p>
+                        <p>
+                            - Matematica 1
+                        </p>
+                    </div>
+
+                    <script>
+                        function mostrarContenido()
+                        {
+                            const seleccion = document.getElementById('opciones')
+
+                            if (seleccion === 'Ciclo1-2021') 
+                            {
+                                document.getElementById('Ciclo1').classList.remove('oculto');
+                            } 
+                            else if (seleccion === 'Ciclo2-2021')
+                            {
+                                document.getElementById('Ciclo2').classList.remove('oculto');
+                            }
+                        }
+
+                    </script>
                 </label>
             </div>
-
-            <label for="opciones">Selecciona una opción:</label>
-    <select id="opciones" onchange="mostrarContenido()">
-        <option value="">--Seleccione--</option>
-        <option value="opcion1">Opción 1</option>
-        <option value="opcion2">Opción 2</option>
-    </select>
-
-    <div id="contenidoOpcion1" class="oculto">
-        <p>Has seleccionado la Opción 1. Aquí está el contenido relacionado.</p>
-    </div>
-
-    <div id="contenidoOpcion2" class="oculto">
-        <p>Has seleccionado la Opción 2. Aquí está el contenido relacionado.</p>
-    </div>
-
-    <script>
-        function mostrarContenido() {
-            // Obtener el valor seleccionado
-            const seleccion = document.getElementById('opciones').value;
-
-            // Ocultar todos los contenidos
-            document.getElementById('contenidoOpcion1').classList.add('oculto');
-            document.getElementById('contenidoOpcion2').classList.add('oculto');
-
-            // Mostrar el contenido correspondiente
-            if (seleccion === 'opcion1') {
-                document.getElementById('contenidoOpcion1').classList.remove('oculto');
-            } else if (seleccion === 'opcion2') {
-                document.getElementById('contenidoOpcion2').classList.remove('oculto');
-            }
-        }
-        </script>
-
-            <div>
-                <h2>
-                    Asignaturas
-                </h2>
-            </div>
+            
 
             
 
