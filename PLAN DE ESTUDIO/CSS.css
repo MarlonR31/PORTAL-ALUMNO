@@ -22,8 +22,20 @@ body {
             text-align: center;
             border-radius: 8px 8px 0 0;
             font-size: 2em;
-        }
 
+            @media (max-width: 600px) {
+                .container {
+                    background-color: lightblue; /* Cambia el fondo en pantallas pequeñas */
+                }
+            }
+            
+            @media (min-width: 601px) {
+                .container {
+                    background-color: lightgreen; /* Cambia el fondo en pantallas más grandes */
+                }
+            }
+        }
+        
         h1 {
             color: #333;
             text-align: center;
