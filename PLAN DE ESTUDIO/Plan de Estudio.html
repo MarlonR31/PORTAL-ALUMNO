@@ -64,37 +64,39 @@
                         45
                     </label>
                 </div> <br>
-        </div>
 
-            <div class="row">
-                <label for="grado">
-                    Grado:
-                    <select id="opciones" onchange="mostrarContenido()"> 
-                        <option value="">
-                            Seleccionar ciclo
-                        </option>
-                        <option value="Ciclo1-2021">
-                            Ciclo 1 - 2021
-                        </option>
-                        <option value="Ciclo2-2021">
-                            Ciclo 2 - 2021
-                        </option>
-                    </select>
-
-                    <div>
-                        <h2>
-                            Asignaturas
-                        </h2>
+                <div class="row">
+                    <label for="grado">
+                        Grado:
+                        <select id="opciones" onchange="mostrarContenido()"> 
+                            <option value="">
+                                Seleccionar ciclo
+                            </option>
+                            <option value="Ciclo1-2021">
+                                Ciclo 1 - 2021
+                            </option>
+                            <option value="Ciclo2-2021">
+                                Ciclo 2 - 2021
+                            </option>
+                        </select>
+    
+                        <div>
+                            <h2>
+                                Asignaturas
+                            </h2>
+                        </div>
+    
+                        <div id="Ciclo1" class="oculto0">
+                            <p>
+                                - Programación 1
+                            </p>
+                            <p>
+                                - Matematica 1
+                            </p>
                     </div>
+                </div>
 
-                    <div id="Ciclo1" class="oculto0">
-                        <p>
-                            - Programación 1
-                        </p>
-                        <p>
-                            - Matematica 1
-                        </p>
-                    </div>
+            
 
                     <script>
                         function mostrarContenido()
