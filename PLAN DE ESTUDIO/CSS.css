@@ -6,6 +6,7 @@ body {
         }
 
         .Contorno {
+            width: 100%;
             max-width: 1080px;
             margin: 20px auto;
             background-color: #fff;
@@ -20,6 +21,7 @@ body {
             padding: 10px;
             text-align: center;
             border-radius: 8px 8px 0 0;
+            font-size: 2em;
         }
 
         h1 {
