@@ -43,6 +43,7 @@ body {
 
         .Seccion {
             margin-bottom: 20px;
+            height: 100px;
         }
 
         .Seccion-titulo {
@@ -86,4 +87,14 @@ body {
         }
         .oculto {
             display: none; /* Oculta los elementos por defecto */
-        }        
+        }      
+
+.line{
+    height: 100px;
+}
+.line1{
+    background-color: #d3f8f0;
+}
+.line2{
+    background-color: aquamarine;
+}
