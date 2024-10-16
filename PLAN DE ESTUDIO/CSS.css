@@ -102,12 +102,10 @@ body {
 .derecha {
     width: 50%; /* Toma el 50% del ancho */
     padding: 20px; /* Espaciado interno */
-    background-color: #2196F3; /* Color de fondo azul */
 }
 .izquierda {
     width: 50%; /* Toma el 50% del ancho */
     padding: 20px; /* Espaciado interno */
-    background-color: #f3219c; /* Color de fondo azul */
 }
 .container {
     display: flex; /* Usa flexbox para dividir el espacio */
