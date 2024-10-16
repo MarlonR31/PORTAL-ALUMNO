@@ -66,54 +66,19 @@
                 </div> <br>
 
                 <div class="row">
-                    <label for="grado">
-                        Grado:
-                        <select id="opciones" onchange="mostrarContenido()"> 
-                            <option value="">
-                                Seleccionar ciclo
-                            </option>
-                            <option value="Ciclo1-2021">
-                                Ciclo 1 - 2021
-                            </option>
-                            <option value="Ciclo2-2021">
-                                Ciclo 2 - 2021
-                            </option>
-                        </select>
+                    <label>
+                        <H3 class="centro" >
+                            CICLO I
+                        </H3>
     
-                        <div>
-                            <h2>
+                        <div class="container">
+                            <h2 class="derecha">
                                 Asignaturas
                             </h2>
+                            <h2 class="izquierda">
+                                REQUISITOS
+                            </h2>
                         </div>
-    
-                        <div id="Ciclo1" class="oculto0">
-                            <p>
-                                - Programación 1
-                            </p>
-                            <p>
-                                - Matematica 1
-                            </p>
-                        </div>
-                        </div>
-
-            
-
-                    <script>
-                        function mostrarContenido()
-                        {
-                            const seleccion = document.getElementById('opciones')
-
-                            if (seleccion === 'Ciclo1-2021') 
-                            {
-                                document.getElementById('Ciclo1').classList.remove('oculto');
-                            } 
-                            else if (seleccion === 'Ciclo2-2021')
-                            {
-                                document.getElementById('Ciclo2').classList.remove('oculto');
-                            }
-                        }
-
-                    </script>
                 </label>
             </div>
             
