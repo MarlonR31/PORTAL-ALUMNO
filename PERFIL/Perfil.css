@@ -20,3 +20,16 @@ justify-content: center; /* Centra horizontalmente */
 align-items: center; /* Centra verticalmente */
 margin: 0;
 }
+
+.img{
+    width: 200px;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    animation: gallary 20s linear infinite;
+    cursor: pointer;
+
+}
+.imgs {
+    height: 350px;
+}
