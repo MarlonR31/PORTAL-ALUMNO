@@ -56,10 +56,3 @@
     color: white; /* Color del texto */
     background-color: #2fac10; /* Color de fondo azul */
 }
-
-@media(max-width: 600px)
-{
-    .container{
-        flex-direction: column;
-    }
-}
