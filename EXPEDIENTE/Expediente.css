@@ -19,5 +19,7 @@
     }
 }
 .Sombrear {
-    background-color: #a1a1a3; /* Color de fondo azul */
+    background-color: #dfdfe7; /* Color de fondo azul */
+    margin: 5px;
+    padding: 10px;
 }
