@@ -1,0 +1,9 @@
+.Body {
+    background-color: #eff6f8;
+}
+.Centrar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1vh;
+}
