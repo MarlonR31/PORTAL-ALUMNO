@@ -301,8 +301,7 @@
 
             <section class="content" id="contenido">
                 <br>
-                <a>
-                    <div class="row">
+                <div class="row">
                     <div class="enlace col-xs-12 col-sm-4 col-md-3 col-lg-3 col-xl-3">
                         <div class="small-box bg-blue-gradient">
                             <div class="inner">
@@ -320,9 +319,7 @@
                             </p>
                         </div>
                     </div> <!-- FIN EVALUACION DOCENTE-->
-                </a>
 
-                <a href="PLAN DE ESTUDIO/Plan de Estudio.html">
                     <div class="enlace col-xs-12 col-sm-4 col-md-3 col-lg-3 col-xl-3" id="">
                         <div class="small-box bg-aqua">
                             <div class="inner">
@@ -338,7 +335,6 @@
                             </p>
                         </div>
                     </div> <!-- FIN PLANES DE ESTUDIO -->
-                </a>
 
                     <div class="enlace col-xs-12 col-sm-4 col-md-3 col-lg-3 col-xl-3" id="vista/planes.php">
                         <div class="small-box bg-red"> <!-- COLOR -->
@@ -387,24 +383,6 @@
                             </p>
                         </div>
                     </div> <!-- FIN DE NOTAS -->
-
-                    <a href="AMORTIZACIONES/Calculadora.html">
-                        <div class="enlace col-xs-12 col-sm-4 col-md-3 col-lg-3 col-xl-3" id="">
-                            <div class="small-box bg-aqua">
-                                <div class="inner">
-                                    <h3>&nbsp;&nbsp;</h3>
-                                    <p>  CALCULADORA DE INTERES </p>
-                                </div>
-                                <div class="icon">
-                                    <i class="fa fa-dashboard"></i>
-                                </div>
-                                <p class="small-box-footer">
-                                    Ver 
-                                    <i class="fa fa-arrow-circle-right"></i>
-                                </p>
-                            </div>
-                        </div> <!-- FIN PLANES DE ESTUDIO -->
-                    </a>
 
                 </div>
             </section>
