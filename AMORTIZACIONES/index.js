@@ -21,6 +21,21 @@ form.addEventListener('submit', function(event)
         const balance = initialBalance - principal;
         const year = Math.ceil(i/12);
         row.innerHTML
+        <td> $({year})
+        <td> $(initialBalance.toFixed(2))
+        <td> $(payment.toFixed(2))
+        <td> $(interest.toFixed(2))
+        <td> $(initialBalance.toFixed(2))
+        <td> $(principal.toFixed(2)) 
+        ;
+        tableBody.appendChild(row);
     } 
+});
+
+function calculatePayment(loanAmount, interestRate, loanTerm)
+{
+    const monthlyInteresRate = interestRate / 12;
+    const factor = (1 + monthlyInteresRate) ** loanTerm;
+    return loanAmount * monthlyInteresRate * factor / (factor - 1);
 }
-)
+
