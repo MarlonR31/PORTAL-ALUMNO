@@ -79,3 +79,10 @@
         }
     }
 }
+
+.ContornoOriginal{
+    display: grid;
+    grid-template-rows: 80px auto 1fr 50px;
+    grid-template-columns: 1fr 4fr 1fr;
+    height: 100vh;
+}
