@@ -5,6 +5,7 @@
 .Body 
 {
     border: 14cap;
+    padding: 10px;
     @media(max-width: 768)
     {
         font-size: 14px;
