@@ -1,68 +1,84 @@
-.oculto {
-    display: none; /* Oculta los elementos por defecto */
+.Body
+{
+    align-items: center;
+    justify-content: flex-start;
+    margin: 10;
+    background-color: rgb(196, 187, 73);
 }
-
-.Contorno {
-    width: 100%;
-    margin: auto;
-    padding: auto;
-    
-    border-radius: 8px; /* FORMA REDONDA*/
-}
-
-.Centrar-Titulo { /* TITUTO EN NEGRITO*/
+.Centrar-Titulo
+{
     text-align: center;
-    font-size: 3em;
-    font-weight: bold;
-    color: aliceblue;
-    background-color: rgb(0, 47, 255);
+    background-color: aliceblue;
 }
-.body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-}
-.container {
+
+.container { /* DIVIDIMOS EN COLUMNAS*/
     display: flex; /* Usa flexbox para dividir el espacio */
     height: 9vh; /* Altura completa de la ventana */
 }
 
-.lado-derecho {
-    background-color: #2196F3; /* Color de fondo azul */
-    width: 45%; /* Toma el 50% del ancho */
-    padding: 20px; /* Espaciado interno */
-    color: white; /* Color del texto */
-}
-.lado-izquierdo {
-    background-color: #4CAF50; /* Color de fondo verde */
-    width: 10%; /* Toma el 50% del ancho */
-    padding: 20px; /* Espaciado interno */
-    color: white; /* Color del texto */
-}
-.derecha {
-    width: 45%; /* Toma el 50% del ancho */
-    padding: 20px; /* Espaciado interno */
-    color: white; /* Color del texto */
-    background-color: #2196F3; /* Color de fondo azul */
-}
-.izquierda {
-    width: 10%; /* Toma el 50% del ancho */
-    padding: 20px; /* Espaciado interno */
-    color: white; /* Color del texto */
-    background-color: #f3219c; /* Color de fondo azul */
-}
-.derecha1 {
-    width: 45%; /* Toma el 50% del ancho */
-    padding: 20px; /* Espaciado interno */
-    color: white; /* Color del texto */
-    background-color: #2fac10; /* Color de fondo azul */
+.items
+{
+    .item1
+    {
+        background-color: aqua;
+        width: 25%; /* Toma el 50% del ancho */
+    }
+    .lab1
+    {
+        background-color: rgb(0, 4, 255);
+        width: 10%;
+    }
+    .lab2
+    {
+        background-color: rgb(255, 0, 200);
+        width: 10%;
+    }
+    .lab3
+    {
+        background-color: rgb(255, 160, 235);
+        width: 10%;
+    }
+    .parcial1
+    {
+        background-color: rgb(0, 4, 255);
+        width: 10%;
+    }
+    .parcial2
+    {
+        background-color: rgb(255, 0, 200);
+        width: 10%;
+    }
+    .parcial3
+    {
+        background-color: rgb(255, 160, 235);
+        width: 10%;
+    }
+    .repo
+    {
+        background-color: rgb(0, 4, 255);
+        width: 10%;
+    }
+    .NF
+    {
+        background-color: rgb(255, 0, 200);
+        width: 10%;
+    }
 }
 
-@media(max-width:600px)
+.grip-container
 {
-    body{
-        background-color: lightblue;
-        line-height: 1.6;
-    }
+    display: grid;
+    grid-column: 
+    repeat(auto-fill, minmax(100px), 1fr);
+    grid-gap: 10px;
+    padding: 10px;
+    background-color: aqua;
+}
+
+.grid-item
+{
+    text-align: center;
+    padding: 20px;
 }
 
 .ContornoOriginal{
@@ -72,6 +88,7 @@
     height: 100vh;
     grid-template-areas: 
     "header header header"
+    "left-aside banner right-aside"
     ;
     grid-gap: 10px; padding: 10px;
     font-weight: 600; font-size: 20px;
