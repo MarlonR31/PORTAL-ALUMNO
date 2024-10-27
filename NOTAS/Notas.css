@@ -64,3 +64,18 @@
         line-height: 1.6;
     }
 }
+
+.ContornoAndroid
+{
+    @media (max-width: 600px) {
+        .container {
+            background-color: lightblue; /* Cambia el fondo en pantallas pequeñas */
+        }
+    }
+    
+    @media (min-width: 601px) {
+        .container {
+            background-color: lightgreen; /* Cambia el fondo en pantallas más grandes */
+        }
+    }
+}
