@@ -68,9 +68,9 @@
 
         <nav class="items">
             <div class="oculto" id="contenidoOpcion1">
-                <h2>
+                <h3 class="Centrar-Titulo">
                     CICLO 01 - 2021
-                </h2>
+                </h3>
                 <h4 class="item1">
                     TECNOLOGIAS DE LA INFORMACION
                 </h4>
@@ -78,31 +78,51 @@
         </nav>
         <nav class="items">
             <div class="oculto" id="contenidoOpcion2">
-                <h2>
+                <h3 class="Centrar-Titulo">
                     CICLO 02 - 2021
-                </h2>
+                </h3>
                 <h4 class="item1">
-                    ADMINISTRACION DE EMPRESAS
+                    METODOS Y TECNICAS DE INVESTIGACION
                 </h4>
             </div>
         </nav>
         <nav class="items">
             <div class="oculto" id="contenidoOpcion3">
-                <h2>
+                <h3 class="Centrar-Titulo">
                     CICLO 01 - 2022
-                </h2>
+                </h3>
                 <h4 class="item1">
-                    ADMINISTRACION DE EMPRESAS
+                    REALIDAD NACIONAL
                 </h4>
             </div>
         </nav>
         <nav class="items">
             <div class="oculto" id="contenidoOpcion4">
-                <h2 class="Centrar-Titulo">
+                <h3 class="Centrar-Titulo">
                     CICLO 02 - 2022
-                </h2>
+                </h3>
                 <h4 class="item1">
-                    ADMINISTRACION DE EMPRESAS
+                    INGLES TECNICO
+                </h4>
+            </div>
+        </nav>
+        <nav class="items"> <!--CICLO 5-->
+            <div class="oculto" id="contenidoOpcion5">
+                <h3 class="Centrar-Titulo">
+                    CICLO 01 - 2023
+                </h3>
+                <h4 class="item1">
+                    MATEMATICA FINANCIERA
+                </h4>
+            </div>
+        </nav>
+        <nav class="items"> <!--CICLO 6-->
+            <div class="oculto" id="contenidoOpcion6">
+                <h3 class="Centrar-Titulo">
+                    CICLO 01 - 2023
+                </h3>
+                <h4 class="item1">
+                    ARQUITECTURA DE COMPUTADORAS I
                 </h4>
             </div>
         </nav>
@@ -115,6 +135,8 @@
                 // Ocultar todos los contenidos
                 document.getElementById('contenidoOpcion1').classList.add('oculto');
                 document.getElementById('contenidoOpcion2').classList.add('oculto');
+                document.getElementById('contenidoOpcion3').classList.add('oculto');
+                document.getElementById('contenidoOpcion4').classList.add('oculto');
 
                 // Mostrar el contenido correspondiente
                 if (seleccion === 'opcion1') {
@@ -126,7 +148,7 @@
                 {
                     document.getElementById('contenidoOpcion3').classList.remove('oculto');
                 }
-                else (seleccion === 'opcion4')
+                else if (seleccion === 'opcion4')
                 {
                     document.getElementById('contenidoOpcion4').classList.remove('oculto');
                 }
