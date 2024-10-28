@@ -13,7 +13,7 @@
 
 .container { /* DIVIDIMOS EN COLUMNAS*/
     display: flex; /* Usa flexbox para dividir el espacio */
-    height: 9vh; /* Altura completa de la ventana */
+    height: 10vh; /* Altura completa de la ventana */
 }
 
 .items
