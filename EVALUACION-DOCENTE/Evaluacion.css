@@ -21,3 +21,70 @@
         }
     }
 }
+
+.oculto {
+    display: none; /* Oculta los elementos por defecto */
+}
+
+.Contorno {
+    width: 100%;
+    margin: auto;
+    padding: auto;
+    
+    border-radius: 8px; /* FORMA REDONDA*/
+}
+
+.Centrar-Titulo { /* TITUTO EN NEGRITO*/
+    text-align: center;
+    font-size: 3em;
+    font-weight: bold;
+    color: aliceblue;
+    background-color: rgb(0, 47, 255);
+}
+.body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.container {
+    display: flex; /* Usa flexbox para dividir el espacio */
+    height: 9vh; /* Altura completa de la ventana */
+}
+
+.lado-derecho {
+    background-color: #2196F3; /* Color de fondo azul */
+    width: 45%; /* Toma el 50% del ancho */
+    padding: 20px; /* Espaciado interno */
+    color: white; /* Color del texto */
+}
+.lado-izquierdo {
+    background-color: #4CAF50; /* Color de fondo verde */
+    width: 10%; /* Toma el 50% del ancho */
+    padding: 20px; /* Espaciado interno */
+    color: white; /* Color del texto */
+}
+.derecha {
+    width: 45%; /* Toma el 50% del ancho */
+    padding: 20px; /* Espaciado interno */
+    color: white; /* Color del texto */
+    background-color: #2196F3; /* Color de fondo azul */
+}
+.izquierda {
+    width: 10%; /* Toma el 50% del ancho */
+    padding: 20px; /* Espaciado interno */
+    color: white; /* Color del texto */
+    background-color: #f3219c; /* Color de fondo azul */
+}
+.derecha1 {
+    width: 45%; /* Toma el 50% del ancho */
+    padding: 20px; /* Espaciado interno */
+    color: white; /* Color del texto */
+    background-color: #2fac10; /* Color de fondo azul */
+}
+
+@media(max-width:600px)
+{
+    body{
+        background-color: lightblue;
+        line-height: 1.6;
+    }
+}

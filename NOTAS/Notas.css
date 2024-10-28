@@ -21,47 +21,50 @@
     .item1
     {
         background-color: aqua;
-        width: 25%; /* Toma el 50% del ancho */
+        width: 35%; /* Toma el 50% del ancho */
     }
     .lab1
     {
         background-color: rgb(0, 4, 255);
-        width: 10%;
+        width: 8%;
     }
     .lab2
     {
         background-color: rgb(255, 0, 200);
-        width: 10%;
+        width: 8%;
     }
     .lab3
     {
         background-color: rgb(255, 160, 235);
-        width: 10%;
+        width: 8%;
     }
     .parcial1
     {
         background-color: rgb(0, 4, 255);
-        width: 10%;
+        width: 8%;
     }
     .parcial2
     {
         background-color: rgb(255, 0, 200);
-        width: 10%;
+        width: 8%;
     }
     .parcial3
     {
         background-color: rgb(255, 160, 235);
-        width: 10%;
+        width: 8%;
     }
     .repo
     {
         background-color: rgb(0, 4, 255);
-        width: 10%;
+        width: 8%;
     }
     .NF
     {
         background-color: rgb(255, 0, 200);
-        width: 10%;
+        width: 8%;
+    }
+    .oculto {
+        display: none; /* Oculta los elementos por defecto */
     }
 }
 
