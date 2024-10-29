@@ -28,7 +28,7 @@
     border-radius: 8px; /* FORMA REDONDA*/
 }
 .items
-{
+{    
     .item1
     {
         background-color: rgb(224, 223, 255);
@@ -77,6 +77,10 @@
     .oculto {
         display: none; /* Oculta los elementos por defecto */
     }
+}
+.acercar
+{
+    margin-bottom: -20px;
 }
 
 .grip-container
