@@ -14,7 +14,7 @@
 .container { /* DIVIDIMOS EN COLUMNAS*/
     display: flex; /* Usa flexbox para dividir el espacio */
     height: 9vh; /* Altura completa de la ventana */
-    margin-bottom: 5px;
+    margin-bottom: -20px;
     justify-content: space-between;
     align-items: center;
 }
@@ -78,9 +78,8 @@
         display: none; /* Oculta los elementos por defecto */
     }
 }
-.acercar
-{
-    margin-bottom: -20px;
+.Oculto {
+    display: none; /* Oculta los elementos por defecto */
 }
 
 .grip-container
