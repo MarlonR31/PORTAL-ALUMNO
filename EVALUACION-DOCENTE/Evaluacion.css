@@ -1,9 +1,8 @@
 .SVerde 
 {
     background-color: rgb(143, 250, 116);
-    white-space: nowrap;
-        box-sizing: border-box;
-        animation: scroll 9s linear infinite;
+    box-sizing: border-box;
+    animation: scroll 9s linear infinite;
 }
 
 @keyframes scroll 
