@@ -1,15 +1,9 @@
 .SVerde 
 {
     background-color: rgb(143, 250, 116);
-    box-sizing: border-box;
-    animation: scroll 9s linear infinite;
 }
 
-@keyframes scroll 
-{
-    0% { transform: translateX(100%); }
-    80% { transform: translateX(-100%); }
-}
+
 
 .Body 
 {
