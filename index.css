@@ -186,7 +186,6 @@
     gap: 0.4rem;
     border: none;
     font-weight: bold;
-    border-radius: 30px;
     cursor: pointer;
     text-shadow: 2px 2px 3px rgb(136 0 136 / 50%);
     background: linear-gradient(
@@ -203,14 +202,12 @@
       )
       no-repeat;
     background-size: 300%;
-    background-position: left center;
-    transition: background 0.3s ease;
     color: #fff;
   }
   
   .button:hover {
-    background-size: 320%;
-    background-position: right center;
+    background-size: 300%;
+
   }
   
   .button:hover svg {
@@ -218,7 +215,7 @@
   }
   
   .button svg {
-    width: 23px;
+    width: 28px;
     fill: #f09f33;
     transition: 0.3s ease;
   }
