@@ -53,6 +53,7 @@
             cursor: pointer;
         }
     </style>
+    <link rel="stylesheet" href="index.css">
 
 </head> <!-- Termina Informacion tecnica para el navegador-->
 
@@ -68,10 +69,18 @@
                 </a>
                 <div class="navbar-custom-menu">
                     <ul class="nav navbar-nav">
-                        <li class="dropdown user user-menu">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <!-- VER PERFIL -->
-                                <span><i class="fa fa-user"></i> Perfil</span>
-                            </a> 
+                        <li class="dropdown user user-menu"> <!--NAVEGADOR DEL PERFIL--> <br>
+                            <button type="button" class="btn" data-toggle="dropdown">
+                                <strong>PERFIL</strong>
+                                <div id="container-stars">
+                                  <div id="stars"></div>
+                                </div>
+                              
+                                <div id="glow">
+                                  <div class="circle"></div>
+                                  <div class="circle"></div>
+                                </div>
+                            </button>
 
                             <ul class="dropdown-menu">
                                <li class="user-header"> <!-- FOTO DE PERFIL-->
