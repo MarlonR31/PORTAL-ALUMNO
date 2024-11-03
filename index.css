@@ -17,7 +17,7 @@
       linear-gradient(
         137.48deg,
         #ffdb3b 10%,
-        #fe53bb 45%,
+        #b033eb 45%,
         #8f51ea 67%,
         #0044ff 87%
       );
@@ -172,7 +172,7 @@
   
     100% {
       transform: scale(0.75);
-      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+      box-shadow: 0 0 0 0 rgba(12, 9, 9, 0);
     }
   }
 /* FIN DE BOTON SPACE */  
