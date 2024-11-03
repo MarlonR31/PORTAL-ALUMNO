@@ -1,9 +1,16 @@
 .Body {
-    background-color: #eff6f8;
+    background-color: #6dc1c7;
 }
 .Centrar{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 1vh;
+}
+
+.color1
+{
+    background-color: rgb(169, 177, 247);
+    padding: 5px;
+    width: 99%;
 }
