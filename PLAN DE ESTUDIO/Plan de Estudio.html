@@ -10,6 +10,7 @@
     </head>
 
     <body>
+        <div id="loader" class="loader">Cargando...</div>
         <div class="Contorno"> <!-- CONTORNO DE PAGINA BLANCA -->
             <div class="Encabezado">
                 <h1>
@@ -599,7 +600,18 @@
 
             
         </div>
-
+        <script> //EJECUTAMOS CARGANDO
+            // script.js
+            window.addEventListener('load', function() {
+                const loader = document.getElementById('loader');
+                const content = document.getElementById('content');
+    
+                // Ocultar el cargador después de que la página haya cargado
+                loader.style.display = 'none'; // Oculta el cargador
+                content.classList.remove('hidden'); // Muestra el contenido
+                content.classList.add('fade-in'); // Aplica la animación de desvanecimiento
+            });
+        </script> <!-- Enlaza tu archivo JavaScript -->
     </body>
 </html> 
 
