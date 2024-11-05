@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tabla Ordenable</title>
+<style>
+    table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+  cursor: pointer; /* Indicar que se puede hacer clic */
+}
+</style>
+</head>
+<body>
+
+    <table>
+    <thead>
+        <tr>
+            <th onclick="sortTable(0)">AÑO</th>
+            <th onclick="sortTable(1)">CICLO</th>
+            <th onclick="sortTable(2)">CÓDIGO</th>
+            <th onclick="sortTable(3)">ASIGNATURA</th>
+            <th onclick="sortTable(4)">U.V.</th>
+            <th onclick="sortTable(5)">NOTA</th>
+            <th onclick="sortTable(6)">ESTADO</th>
+            <th onclick="sortTable(7)">PERIODO</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td><td>1</td><td>332</td><td>INFORMÁTICA</td><td>4</td><td>8.00</td><td>Aprobada</td><td>1/2021</td>
+        </tr>
+        <tr>
+            <td>1</td><td>1</td><td>001</td><td>INGLES BASICO</td><td>6</td><td>7.40</td><td>Aprobada</td><td>1/2021</td>
+        </tr>
+        <tr>
+            <td>1</td><td>1</td><td>332</td><td>INFORMÁTICA</td><td>4</td><td>8.00</td><td>Aprobada</td><td>1/2021</td>
+        </tr>
+    </tbody>
+    </table>
+
+    <script>
+        function sortTable(n) {
+  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+  table = document.getElementsByTagName("table")[0];
+  switching = true;
+
+  // Establecer la dirección de ordenamiento ascendente
+  dir = "asc"; 
+
+  // Bucle hasta que no haya más cambios
+  while (switching) {
+    switching = false;
+    rows = table.rows;
+
+    // Recorre todas las filas de la tabla (excepto el encabezado)
+    for (i = 1; i < (rows.length - 1); i++) {
+      shouldSwitch = false;
+
+      // Obtener las dos filas a comparar
+      x = rows[i].getElementsByTagName("TD")[n];
+      y = rows[i + 1].getElementsByTagName("TD")[n];
+
+      // Comparar las celdas según la dirección de ordenamiento
+      if (dir === "asc") {
+        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+          shouldSwitch = true;
+          break;
+        }
+      } else if (dir === "desc") {
+        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+          shouldSwitch = true;
+          break;
+        }
+      }
+    }
+    
+    if (shouldSwitch) {
+      // Si se debe cambiar, intercambiar las filas y marcar que se ha hecho un cambio
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      switchcount++; 
+    } else {
+      // Si no se ha hecho ningún cambio y la dirección es ascendente, establecer la dirección a descendente y volver a intentar
+      if (switchcount === 0 && dir === "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+}
+</script>
+</body>
+</html>
