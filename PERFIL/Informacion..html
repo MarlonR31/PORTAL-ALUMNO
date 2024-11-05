@@ -1,0 +1,91 @@
+<!DOCTYPE html>|
+<html>
+    <head> <!-- ENCABEZADO -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            PERFIL
+        </title>
+        <link rel="stylesheet" href="Perfil.css">
+        <style>
+            .iframe
+            {
+                border: none;
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <div class="perfil"> 
+            <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+            <img src="PERFIL.jpg" height="150">
+            <div id="contador">Me encanta: 0</div>
+            <button id="boton" class="iframe">
+                <div class="heart-container" title="Me Encanta">
+                    <input type="checkbox" class="checkbox" id="Corazon">
+                    <div class="svg-container">
+                        <svg viewBox="0 0 24 24" class="svg-outline" xmlns="">
+                            <path d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Zm-3.585,18.4a2.973,2.973,0,0,1-3.83,0C4.947,16.006,2,11.87,2,8.967a4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,11,8.967a1,1,0,0,0,2,0,4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,22,8.967C22,11.87,19.053,16.006,13.915,20.313Z">
+                            </path>
+                        </svg>
+                        <svg viewBox="0 0 24 24" class="svg-filled" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Z">
+                            </path>
+                        </svg>
+                        <svg class="svg-celebrate" width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+                            <polygon points="10,10 20,20"></polygon>
+                            <polygon points="10,50 20,50"></polygon>
+                            <polygon points="20,80 30,70"></polygon>
+                            <polygon points="90,10 80,20"></polygon>
+                            <polygon points="90,50 80,50"></polygon>
+                            <polygon points="80,80 70,70"></polygon>
+                        </svg>
+                    </div>
+                </div>
+                
+            </button>
+            <script>
+                let contador = 0; // Inicializamos el contador en 0
+
+                // Seleccionamos el botón y el elemento donde mostraremos la cuenta
+                const boton = document.getElementById('boton');
+                const contadorElemento = document.getElementById('contador');
+
+                // Agregamos un evento de clic al botón
+                boton.addEventListener('click', function() {
+                    contador++; // Incrementamos el contador
+                    contadorElemento.innerText = `Me encanta: x${contador}`; // Actualizamos el texto en pantalla
+                }); 
+            </script>
+            <h1>
+                PERFIL DE: MARLON STIVEN RAMOS VÁSQUEZ
+            </h1>
+            <P>
+                <h4>EDAD: 22 AÑOS </h4>
+                <h4>FECHA DE NACIMIENTO: 31/07/2002</h4>
+                <h4>ESTADO CIVIL: SOLTERO</h4>
+                <H4>NACIONALIDAD: SALVADOREÑA</H4>
+                <H4>LUGAR DE NACIMIENTO: SAN MIGUEL, SAN MIGUEL</H4>
+                <H4>RESIDENCIA: ESTADOUNIDENSE 100% AMERICANO SALVADOREÑO 😂😂😂</H4>
+                <H4>LLAMAME AL: 6011 - 4812 </H4>
+
+                <footer class="main-footer"> <!-- PARTE BAJA DE LA PAGINA-->
+                    <br>
+                    <div class="pull-right hidden-xs">
+                        <b>Version</b> 1.1
+                    </div>
+                    <strong>
+                        HOLA ❤❤❤ &copy; PERSONA FAVORITA <a href="https://www.instagram.com/reel/C-vnb68xCpD/?igsh=ajMyczU2ZzAzNG5l" target="_blank"> NO TOCAR - SOLO SOLTEROS </a>.</strong> Todos los derechos reservados.
+                    </strong>
+                    <br> <br>
+                    <strong>
+                        Copyright - MARLON RAMOS &copy; 2025 - INSTAGRAM <a href="https://www.instagram.com/marlon_ramos_31/profilecard/?igsh=cnhnenplMHd5bWg3" target="_blank"> MARLON RAMOS </a>.</strong> Todos los derechos reservados.
+                    </strong>
+                </footer>
+            </P>
+        </div>
+        
+    </body>
+
+</html>
