@@ -117,3 +117,15 @@ body{
     align-items: center;
     height: 1vh;
 }
+
+.ciclo1
+{
+    .facultad
+    {
+        width: 25;
+    }
+    .ingenieria
+    {
+        width: 25;
+    }
+}
