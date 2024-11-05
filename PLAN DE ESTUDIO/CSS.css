@@ -111,6 +111,7 @@ body{
 {
     width: 10%;
     padding: 20px;
+    text-align: center;
 }
 .container {
     display: flex; /* Usa flexbox para dividir el espacio */
