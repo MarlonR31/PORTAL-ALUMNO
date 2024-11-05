@@ -100,12 +100,17 @@ body{
 }
 
 .derecha {
-    width: 50%; /* Toma el 50% del ancho */
+    width: 40%; /* Toma el 50% del ancho */
     padding: 20px; /* Espaciado interno */
 }
 .izquierda {
-    width: 50%; /* Toma el 50% del ancho */
+    width: 40%; /* Toma el 50% del ancho */
     padding: 20px; /* Espaciado interno */
+}
+.izquierda2
+{
+    width: 10%;
+    padding: 20px;
 }
 .container {
     display: flex; /* Usa flexbox para dividir el espacio */
