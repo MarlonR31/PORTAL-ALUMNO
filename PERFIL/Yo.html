@@ -135,7 +135,7 @@
     <div class="like-button" style="width: 185px;">
         <input class="on" id="heart" type="checkbox" />
         <!--CORAZON DE LIKE-->
-        <label class="like" for="heart">
+        <label class="like" for="heart" id="boton">
             <svg
             class="like-icon"
             fill-rule="nonzero"
@@ -147,8 +147,20 @@
             </svg>
             <span class="like-text">Me Encanta</span>
         </label>
-        <span class="like-count one">999</span>
-        <span class="like-count two">1000</span>
+        <span class="like-count" id="contador">99</span>
+        <script>
+            let contador = 999; // Inicializamos el contador en 0
+
+            // Seleccionamos el botón y el elemento donde mostraremos la cuenta
+            const boton = document.getElementById('boton');
+            const contadorElemento = document.getElementById('contador');
+
+            // Agregamos un evento de clic al botón
+            boton.addEventListener('click', function() {
+                contador++; // Incrementamos el contador
+                contadorElemento.innerText = `${contador}`; // Actualizamos el texto en pantalla
+            });
+        </script>
     </div>
 </div>
 

@@ -1,491 +1,100 @@
 <!DOCTYPE html>
-<html>  <!-- INICIA MI PAGINA-->
-
-<head> <!-- Comienza Informacion tecnica para el navegador-->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="shortcut icon" href="PERFIL/PERFIL.jpg" /> <!-- FOTO MINIATURA DE LA PAGINA -->
-    <title> PORTAL - MARLON</title>
-    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-
-    <!-- Bootstrap 3.3.6 -->
-    <link rel="stylesheet" href="CSS/Bootstrap 1.css">
-    <link rel="stylesheet" href="CSS/Bootstrap 2.css">
-    <link rel="stylesheet" href="CSS/Bootstrap 3.css">
-    <link rel="stylesheet" href="CSS/Bootstrap 4.css">
-    <link rel="stylesheet" href="CSS/Bootstrap 5.css">
-    <link rel="stylesheet" href="CSS/Bootstrap 6.css"> <!-- SKIN BLUE-->
-
-    <!-- calendar -->
-    <link rel="stylesheet" href="CSS/Calendar 1.css">
-    <link rel="stylesheet" href="CSS/Calendar 2.css">
-    <link rel="stylesheet" href="CSS/Calendar 3.css">
-
-    <!-- jQuery 2.2.3 - SCRIPT-->
-     <script src="SCRIPT/JQuery 1.js"> </script>
-     <script src="SCRIPT/JQuery 2.js"> </script>
-     <script src="SCRIPT/JQuery 3.js"> </script>
-     <script src="SCRIPT/JQuery 4.js"> </script>
-     <script src="SCRIPT/JQuery 5.js"> </script>
-     <script src="SCRIPT/JQuery 6.js"> </script> 
-
-    <script>
-        $.widget.bridge('uibutton', $.ui.button);
-    </script>
-
-    <!-- Sparkline -->
-     <script src="SCRIPT/Sparkline 1.js"> </script>
-    <!-- jQuery Knob Chart -->
-     <script src="SCRIPT/JQuery Knob 1.js"> </script>
-
-    <!-- Slimscroll - Desplazamiento delgado-->
-    <script src="SCRIPT/Slimscroll 1.js"> </script>
-    <script src="SCRIPT/Slimscroll 2.js"> </script>
-
-    <!-- AdminLTE App -->
-    <script src="SCRIPT/AdminLTE 1.js"> </script> <!--MOVER LATERAL IZQUIERDO-->
-    <script src="SCRIPT/AdminLTE 2.js"> </script>
-    <link rel="stylesheet" href="CSS/AdminLTE 1.css">
-    <link rel="stylesheet" href="CSS/AdminLTE 2.css">
-
-    <style type="text/css">
-        .enlace{
-            cursor: pointer;
-        }
-    </style>
-    <link rel="stylesheet" href="index.css">
-
-</head> <!-- Termina Informacion tecnica para el navegador-->
-
-<body class="skin-blue"> <!-- CONTENIDO DE LA PAGINA ............................................................................ -->
-    <div class="wrapper">
-        <header class="main-header">
-            <a href="PLAN DE ESTUDIO/Plan de Estudio.html" class="button logo"> 
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 24">
-                    <path d="m18 0 8 12 10-8-4 20H4L0 4l10 8 8-12z"></path>
-                </svg>
-                <span><b> MARLON RAMOS </b></span>
-            </a>
-
-            <nav  class="navbar navbar-static-top">
-                <a href="PERFIL/PERFIL.jpg" class="sidebar-toggle" data-toggle="offcanvas" role="button">
-                </a>
-                <div class="navbar-custom-menu">
-                    <ul class="nav navbar-nav">
-                        <li class="dropdown user user-menu"> <!--NAVEGADOR DEL PERFIL--> <br>
-                            <button type="button" class="btn" data-toggle="dropdown">
-                                <strong>PERFIL</strong>
-                                <div id="container-stars">
-                                  <div id="stars"></div>
-                                </div>
-                              
-                                <div id="glow">
-                                  <div class="circle"></div>
-                                  <div class="circle"></div>
-                                </div>
-                            </button>
-
-                            <ul class="dropdown-menu">
-                               <li class="user-header"> <!-- FOTO DE PERFIL-->
-                                    <img src="IMG/MA.jpeg" class="img-circle" alt="User Image">
-                                    <br>
-                                    <P class="text-white">
-                                        <small>
-                                            INGENIERIA EN SISTEMAS
-                                        </small>
-                                        <small>PLAN 2022-2026</small>
-                                        <strong>
-                                            CUM:
-                                        </strong>
-                                        10.00
-                                    </P>
-                               </li>
-                               <Li class="user-footer"> <!-- VENTANA DE PERFIL-->
-                                    <div class="pull-left">
-                                        <a href="PERFIL/Perfil.html" id="PERFIL/Perfil.php" class="btn btn-primary btn-flat enlace">
-                                            <b>
-                                                Perfil
-                                            </b>
-                                            <br>
-                                        </a>
-                                    </div>
-                                    <div class="pull-right">
-                                        <a class="btn btn-primary btn-flat" href="CERRAR-SESION/Sesion.html">
-                                            <b>
-                                                Cerrar Sesion
-                                            </b>
-                                        </a>
-                                    </div>
-                               </Li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </header> <!-- FIN PRIMERA PARTE-->
-
-        <aside class="main-sidebar"> <!-- INICIO DE MENU IZQUIERDO -->
-            <section class="sidebar">
-                <div class="user-panel">
-                    <div class="text-center"> <!-- FOTO CIRCULAR DE PERFIL-->
-                        <img src="PERFIL/Stiven.jpg" img="circle" alt="User Image" Height="100px">
-                    </div>
-                    <div class="pull-left info">
-                        <P class="text-center">
-                            MARLON RAMOS
-                        </P>
-                        <strong>
-                            CUM:
-                            <strong>
-                                10.00
-                            </strong>
-                            <br>
-                        </strong>
-                    </div>
-                    <br> <br>
-                </div>
-
-                <ul class="sidebar-menu"> <!-- BARRA -->
-                    <li class="treeview">
-                        <script>
-                            function mostraralerta()
-                            {
-                                alert("NO DISPONIBLE - AUN LO ESTA PROGRAMANDO - MARLON RAMOS");
-                            }
-                        </script>
-                        <a onclick="mostraralerta()" class="enlace">
-                            <i 
-                            class="fa fa-file-text-o">
-                            </i>
-                            <span> PREINSCRIPCIÓN </span>
-                        </a>
-                    </li>
-                    <li class="treeview"> <!-- PAGOS EN LINEA -->
-                        <a onclick="mostraralerta()" class="enlace">
-                            <i class="fa fa-credit-card">
-                            </i>
-                            <span> PAGOS EN LINEA </span>
-                        </a>
-                    </li>
-                    <li> <!-- SERVICIOS EN LINEA -->
-                        <a>
-                            <i class="fa fa-folder"></i> <span>SERVICIOS EN LÍNEA</span>
-                        </a>
-                        <ul>
-                            <a>
-                                <span>
-                                    SOLICITUD DE SERVICIO SOCIAL
-                                </span>
-                            </a>
-                        </ul>
-                        <ul>
-                            <a>
-                                <span>
-                                    SOLICITUD DE EXAMENES
-                                </span>
-                            </a>
-                        </ul>
-                        <ul>
-                            <a>
-                                <span>
-                                    TRAMITES ACADEMICOS
-                                </span>
-                            </a>
-                        </ul>
-                        <ul>
-                            <a>
-                                <span>
-                                    CITAS PSICOLOGICAS
-                                </span>
-                            </a>
-                        </ul>
-                    </li> <!-- FIN SERVICIOS EN LINEA -->
-                    <li>
-                        <a href="EVALUACION-DOCENTE/Evaluacion.html">
-                            <span>
-                                EVALUACIÓN DOCENTE
-                            </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a>
-                            <span>
-                                EVALUACIÓN SERVICIOS
-                            </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a>
-                            <span>
-                                HOJA DE ASESORIA
-                            </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="PLAN DE ESTUDIO/Plan de Estudio.html">
-                            <span>
-                                PLANES DE ESTUDIO
-                            </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="HORARIOS/Horario.html">
-                            <span>
-                                HORARIOS
-                            </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a>
-                            <span>
-                                JORNALIZACIONES
-                            </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a>
-                            <span>
-                                SERVICIOS
-                            </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="RECORD ACADEMICO/Record.html">
-                            <span>
-                                RECORD ACEDEMICO
-                            </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a>
-                            <span>
-                                RECORD ACEDEMICO PRE
-                            </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="NOTAS/Notas.html">
-                            <span>
-                                NOTAS
-                            </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="PAGOS REALIZADOS/Pagos.html">
-                            <span>
-                                PAGOS REALIZADOS
-                            </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a>
-                            <span>
-                                DOCUMENTOS
-                            </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="EXPEDIENTE/Expediente.html">
-                            <span>
-                                EXPEDIENTE
-                            </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="CERRAR-SESION/Sesion.html">
-                            <i class="fa fa-power-off"></i>
-                            <span>
-                                CERRAR SESION
-                            </span>
-                        </a>
-                    </li>
-                </ul>
-            </section>
-        </aside>
-
-        <div class="content-wrapper"> <!-- INICIA PARTE LATERAL DERECHA -->
-            <section class="content" id="contenido">
-                <br>
-                <a href = "EVALUACION-DOCENTE/Evaluacion.html">
-                    <div class="row">
-                    <div class="enlace col-xs-12 col-sm-4 col-md-3 col-lg-3 col-xl-3">
-                        <div class="small-box bg-blue-gradient">
-                            <div class="inner">
-                                <h3>&nbsp;&nbsp;</h3>
-                                <p>
-                                    EVALUACIÓN DOCENTE
-                                </p>
-                            </div>
-                            <div class="icon">
-                                <i class="fa fa-check-square"></i>
-                            </div>
-                            <p class="small-box-footer">
-                                Disponible 
-                                <i class="fa fa-arrow-circle-right"></i>
-                            </p>
-                        </div>
-                    </div> <!-- FIN EVALUACION DOCENTE-->
-                </a>
-
-                <a href="PLAN DE ESTUDIO/Plan de Estudio.html">
-                    <div class="enlace col-xs-12 col-sm-4 col-md-3 col-lg-3 col-xl-3" id="">
-                        <div class="small-box bg-aqua">
-                            <div class="inner">
-                                <h3>&nbsp;&nbsp;</h3>
-                                <p> PLANES DE ESTUDIO </p>
-                            </div>
-                            <div class="icon">
-                                <i class="fa fa-dashboard"></i>
-                            </div>
-                            <p class="small-box-footer">
-                                Ver 
-                                <i class="fa fa-arrow-circle-right"></i>
-                            </p>
-                        </div>
-                    </div> <!-- FIN PLANES DE ESTUDIO -->
-                </a>
-
-                <a href="HORARIOS/Horario.html">
-                    <div class="enlace col-xs-12 col-sm-4 col-md-3 col-lg-3 col-xl-3" id="vista/planes.php">
-                        <div class="small-box bg-red"> <!-- COLOR -->
-                            <div class="inner">
-                                <h3>&nbsp;&nbsp;</h3>
-                                <p> HORARIOS </p>
-                            </div>
-                            <div class="icon">
-                                <i class="fa fa-dashboard"></i>
-                            </div>
-                            <p class="small-box-footer">
-                                Ver 
-                                <i class="fa fa-arrow-circle-right"></i>
-                            </p>
-                        </div>
-                    </div> <!-- FIN DE HORARIOS -->
-                </a>
-
-                <a href="RECORD ACADEMICO/Record.html">
-                    <div class="enlace col-xs-12 col-sm-4 col-md-3 col-lg-3 col-xl-3" id="vista/planes.php">
-                        <div class="small-box bg-yellow"> <!-- COLOR -->
-                            <div class="inner">
-                                <h3>&nbsp;&nbsp;</h3>
-                                <p> RECOR ACADEMICO </p>
-                            </div>
-                            <div class="icon">
-                                <i class="fa fa-dashboard"></i>
-                            </div>
-                            <p class="small-box-footer">
-                                Ver 
-                                <i class="fa fa-arrow-circle-right"></i>
-                            </p>
-                        </div>
-                    </div> <!-- FIN DE RECOR ACEDEMICO -->
-                </a>
-
-                    <a href = "NOTAS/Notas.html">
-                        <div class="enlace col-xs-12 col-sm-4 col-md-3 col-lg-3 col-xl-3" id="NOTAS/Notas.html">
-                            <div class="small-box bg-green"> <!-- COLOR -->
-                                <div class="inner">
-                                    <h3>&nbsp;&nbsp;</h3>
-                                    <p> NOTAS </p>
-                                </div>
-                                <div class="icon">
-                                    <i class="fa fa-dashboard"></i>
-                                </div>
-                                <p class="small-box-footer">
-                                    Ver 
-                                    <i class="fa fa-arrow-circle-right"></i>
-                                </p>
-                            </div>
-                        </div> <!-- FIN DE NOTAS -->
-
-                    </a>
-
-                    <a href = "PAGOS REALIZADOS/Pagos.html">
-                        <div class="enlace col-xs-12 col-sm-4 col-md-3 col-lg-3 col-xl-3" id="NOTAS/Notas.html">
-                            <div class="small-box bg-green"> <!-- COLOR -->
-                                <div class="inner">
-                                    <h3>&nbsp;&nbsp;</h3>
-                                    <p> PAGOS REALIZADOS </p>
-                                </div>
-                                <div class="icon">
-                                    <i class="fa fa-dashboard"></i>
-                                </div>
-                                <p class="small-box-footer">
-                                    Ver 
-                                    <i class="fa fa-arrow-circle-right"></i>
-                                </p>
-                            </div>
-                        </div> <!-- FIN PAGOS REALIZADOS -->
-                    </a>
-
-                    <a href = "DOCUMENTOS/Documentos.html">
-                        <div class="enlace col-xs-12 col-sm-4 col-md-3 col-lg-3 col-xl-3" id="NOTAS/Notas.html">
-                            <div class="small-box bg-green"> <!-- COLOR -->
-                                <div class="inner">
-                                    <h3>&nbsp;&nbsp;</h3>
-                                    <p> DOCUMENTOS</p>
-                                </div>
-                                <div class="icon">
-                                    <i class="fa fa-dashboard"></i>
-                                </div>
-                                <p class="small-box-footer">
-                                    Ver 
-                                    <i class="fa fa-arrow-circle-right"></i>
-                                </p>
-                            </div>
-                        </div> <!-- FIN DOCUMENTOS -->
-                    </a>
-
-                    <a href = "EXPEDIENTE/Expediente.html">
-                        <div class="enlace col-xs-12 col-sm-4 col-md-3 col-lg-3 col-xl-3" id="NOTAS/Notas.html">
-                            <div class="small-box bg-green"> <!-- COLOR -->
-                                <div class="inner">
-                                    <h3>&nbsp;&nbsp;</h3>
-                                    <p> EXPEDIENTE </p>
-                                </div>
-                                <div class="icon">
-                                    <i class="fa fa-dashboard"></i>
-                                </div>
-                                <p class="small-box-footer">
-                                    Ver 
-                                    <i class="fa fa-arrow-circle-right"></i>
-                                </p>
-                            </div>
-                        </div> <!-- EXPEDIENTE -->
-                    </a>
-
-                    <a href="AMORTIZACIONES/Calculadora.html">
-                        <div class="enlace col-xs-12 col-sm-4 col-md-3 col-lg-3 col-xl-3" id="">
-                            <div class="small-box bg-aqua">
-                                <div class="inner">
-                                    <h3>&nbsp;&nbsp;</h3>
-                                    <p>  CALCULADORA DE INTERES </p>
-                                </div>
-                                <div class="icon">
-                                    <i class="fa fa-dashboard"></i>
-                                </div>
-                                <p class="small-box-footer">
-                                    Ver 
-                                    <i class="fa fa-arrow-circle-right"></i>
-                                </p>
-                            </div>
-                        </div> <!-- FIN PLANES DE ESTUDIO -->
-                    </a>
-
-                </div>
-            </section>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INICIAR SESION</title>
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="https://alumnos.univo.edu.sv/bootstrap/login/vendor/bootstrap/css/bootstrap.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="https://alumnos.univo.edu.sv/bootstrap/login/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="https://alumnos.univo.edu.sv/bootstrap/login/fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="https://alumnos.univo.edu.sv/bootstrap/login/vendor/animate/animate.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="https://alumnos.univo.edu.sv/bootstrap/login/vendor/animsition/css/animsition.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="https://alumnos.univo.edu.sv/bootstrap/login/css/util.css">
+    <link rel="stylesheet" type="text/css" href="https://alumnos.univo.edu.sv/bootstrap/login/css/main.css">
+    <link rel="stylesheet" href="Sesion.css">
+</head>
+<body>
+    
+   <iframe src="Astrouna.html" style="width: 100%; height: 40%;"></iframe> 
+    <div>
+        <div>
+            <span class="login100-form-title p-b-43">
+                PORTAL MARLON
+            </span>
         </div>
-
-        <footer class="main-footer"> <!-- PARTE BAJA DE LA PAGINA-->
-            <div class="pull-right hidden-xs">
-                <b>Version</b> 1.1
+        <div id="showAlert">
+        </div>
+        <form id="loginForm">
+            <div class="wrap-input100 validate-input" data-validate = "Usuario es requerido">
+                <input class="input100" type="text" name="username" id="username"  maxlength="10" autocomplete="off">
+                <span class="focus-input100"></span>
+                <label for="username" class="label-input100">
+                    Usuario
+                </label>
             </div>
-            <strong>
-                Copyright - MARLON RAMOS &copy; 20258 - INSTAGRAM <a href="#" target="_blank"> MARLON RAMOS </a>.</strong> Todos los derechos reservados.
-            </strong>
-        </footer>
 
+            <div class="wrap-input100 validate-input" data-validate="Contraseña es requerida">
+                <input class="input100" type="password" name="password" id="password" autocomplete="off">
+                <span class="focus-input100"></span>
+                <label class="label-input100">
+                    Contraseña
+                </label>
+            </div>
+
+            <div class="flex-sb-m w-full p-t-3 p-b-32">
+                <a href="reset-Password.html">
+                    Olvide la contraseña
+                </a>
+            </div>
+            
+            <div style="justify-content: center; display: flex;">
+                <a href="Portalmarlon.html">
+                    <button class="cssbuttons-io-button" id="btnLogin">
+                        INICIAR SESION
+                            <div class="icon">
+                                <svg
+                                height="24"
+                                width="24"
+                                viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg"
+                                >
+                                <path d="M0 0h24v24H0z" fill="none"></path>
+                                <path
+                                    d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                                    fill="currentColor"
+                                ></path>
+                                </svg>
+                            </div>
+                    </button>
+                    <p id="message"></p>
+                </a>
+            </div>
+        </form>
+
+        <script>
+            document.getElementById('loginForm').addEventListener('submit', function(event) {
+                event.preventDefault(); // Evita que el formulario se envíe
+    
+                const username = document.getElementById('username').value;
+                const password = document.getElementById('password').value;
+
+                if (username === 'Marlon' && password === 'Liliana') {
+                    document.getElementById('message').innerText = 'Inicio de sesión exitoso!';
+                    window.location.href = "/index.html";
+                } else {
+                    document.getElementById('message').innerText = 'Usuario o contraseña incorrectos.';
+                    document.getElementById('message').style.color = 'red';
+                }
+            });
+        </script>
+
+        </div>
     </div>
 </body>
-
-</html> <!-- FINALIZA MI PAGINA-->
+</html>

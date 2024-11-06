@@ -54,7 +54,7 @@
             </div>
             
             <div style="justify-content: center; display: flex;">
-                <a href="">
+                <a href="/Portalmarlon.html">
                     <button class="cssbuttons-io-button" id="btnLogin">
                         INICIAR SESION
                             <div class="icon">
@@ -78,19 +78,15 @@
         </form>
 
         <script>
-            // script.js
             document.getElementById('loginForm').addEventListener('submit', function(event) {
                 event.preventDefault(); // Evita que el formulario se envíe
     
                 const username = document.getElementById('username').value;
                 const password = document.getElementById('password').value;
 
-                // Validación simple (puedes cambiar los valores según lo que desees)
                 if (username === 'Marlon' && password === 'Liliana') {
                     document.getElementById('message').innerText = 'Inicio de sesión exitoso!';
                     window.location.href = "/index.html";
-                    // Aquí puedes redirigir a otra página o realizar otra acción.
-                    // window.location.href = "otra_pagina.html";
                 } else {
                     document.getElementById('message').innerText = 'Usuario o contraseña incorrectos.';
                     document.getElementById('message').style.color = 'red';
