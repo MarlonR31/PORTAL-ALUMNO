@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>PERFIL</title>
     <style>
         .button {
         width: 100%;
@@ -61,7 +61,27 @@
     <div>
         <b>EDAD:</b> <br>
         <b>FECHA DE NACIMIENTO:</b> <BR>
-        <b>NACIONALIDAD:</b>
+        <b>NACIONALIDAD:</b> <br>
     </div>
+    <div>
+        <audio id="Music" src="MUSIC/Cinema.mp3">
+        </audio>
+        <button onclick="reproducirAudio()">Reproducir Cinema - Music</button>
+    </div>
+    <div style="height: 40px; width: 40px;">
+        <button onclick="detenerAudio()">Detener Audio</button>
+    </div>
+    <script>
+        function reproducirAudio() {
+            var audio = document.getElementById("Music");
+            audio.play();
+        }
+        function detenerAudio() {
+            var audio = document.getElementById("Music");
+            audio.pause(); // Pausa la reproducción
+            audio.currentTime = 0; // Regresa el tiempo de reproducción al inicio
+        }
+    </script>
+    
 </body>
 </html>
