@@ -10,6 +10,10 @@
             text-align: center;
             width: 50px;
         }
+        .ocultar
+        {
+            display: none; /* Oculta los elementos por defecto */
+        }
     </style>
 
 </head>
@@ -32,13 +36,8 @@
             <option value="opcion7">CICLO 01 - 2024</option>
             <option value="opcion8">CICLO 02 - 2024</option>
         </select>
-        <div>
-            <nav class="items Oculto">
-                
-            </nav>
-        </div>
     </div>
-    <div>
+    <div class="ocultar" id="contenidoOpcion1">
         <table>
             <thead>
                 <tr>
@@ -72,43 +71,8 @@
             </tbody>
         </table>
     </div>
-    <div class="Contorno">
-        <a class="Centrar-Titulo">
-            CICLO 
-        </a>
-        <div class="items">
-            <label class="container">
-                <H4 class="item1">
-                    ASIGNATURA
-                </H4>
-                <h4 class="lab1 Centrar-Titulo">
-                    Lab1
-                </h4>
-                <h4 class="lab2 Centrar-Titulo">
-                    Lab2
-                </h4>
-                <h4 class="lab3 Centrar-Titulo">
-                    Lab3
-                </h4>
-                <h4 class="parcial1 Centrar-Titulo">
-                    Par1
-                </h4>
-                <h4 class="parcial2 Centrar-Titulo">
-                    Par2
-                </h4>
-                <h4 class="parcial3 Centrar-Titulo">
-                    Par3
-                </h4>
-                <h4 class="repo Centrar-Titulo">
-                    Repo
-                </h4>
-                <h4 class="NF Centrar-Titulo">
-                    NF
-                </h4>
-            </label>
-        </div>
         <nav class="items">
-            <div class="oculto" id="contenidoOpcion1">
+            <div class="oculto" id="contenidoOpcion">
                 <div class="container">
                     <h4 class="item1">
                         TECNOLOGIAS INFORMATICAS
@@ -493,7 +457,7 @@
                 const seleccion = document.getElementById('opciones').value;
 
                 // Ocultar todos los contenidos
-                document.getElementById('contenidoOpcion1').classList.add('oculto');
+                document.getElementById('contenidoOpcion1').classList.add('ocultar');
                 document.getElementById('contenidoOpcion2').classList.add('oculto');
                 document.getElementById('contenidoOpcion3').classList.add('oculto');
                 document.getElementById('contenidoOpcion4').classList.add('oculto');
@@ -504,174 +468,37 @@
 
                 // Mostrar el contenido correspondiente
                 if (seleccion === 'opcion1') {
-                    document.getElementById('contenidoOpcion1').classList.remove('oculto');
+                    document.getElementById('contenidoOpcion1').classList.remove('ocultar');
                 } else if (seleccion === 'opcion2') {
-                    document.getElementById('contenidoOpcion2').classList.remove('oculto');
+                    document.getElementById('contenidoOpcion2').classList.remove('ocultar');
                 }
                 else if (seleccion === 'opcion3')
                 {
-                    document.getElementById('contenidoOpcion3').classList.remove('oculto');
+                    document.getElementById('contenidoOpcion3').classList.remove('ocultar');
                 }
                 else if (seleccion === 'opcion4')
                 {
-                    document.getElementById('contenidoOpcion4').classList.remove('oculto');
+                    document.getElementById('contenidoOpcion4').classList.remove('ocultar');
                 }
                 else if (seleccion === 'opcion5')
                 {
-                    document.getElementById('contenidoOpcion5').classList.remove('oculto');
+                    document.getElementById('contenidoOpcion5').classList.remove('ocultar');
                 }
                 else if (seleccion === 'opcion6')
                 {
-                    document.getElementById('contenidoOpcion6').classList.remove('oculto');
+                    document.getElementById('contenidoOpcion6').classList.remove('ocultar');
                 }
                 else if (seleccion === 'opcion7')
                 {
-                    document.getElementById('contenidoOpcion7').classList.remove('oculto');
+                    document.getElementById('contenidoOpcion7').classList.remove('ocultar');
                 }
                 else if (seleccion === 'opcion8')
                 {
-                    document.getElementById('contenidoOpcion8').classList.remove('oculto');
+                    document.getElementById('contenidoOpcion8').classList.remove('ocultar');
                 }
             }
         </script>
-    </div>
-    
-            <nav class="items"> <!-- CICLO 01 --->
-                <div class="container oculto">
-                    
-                </div>
-                <div class="container oculto">
-                    <h4 class="item1">
-                        CONTABILIDAD
-                    </h4>
-                    <!-- LABORATORIOS-->
-                    <h4 class="lab1 Centrar-Titulo">
-                        10
-                    </h4>
-                    <h4 class="lab2 Centrar-Titulo">
-                        10
-                    </h4>
-                    <h4 class="lab3 Centrar-Titulo">
-                        10
-                    </h4>
-                    <!-- PARCIALES-->
-                    <h4 class="parcial1 Centrar-Titulo">
-                        10
-                    </h4>
-                    <h4 class="parcial2 Centrar-Titulo">
-                        10
-                    </h4>
-                    <h4 class="parcial3 Centrar-Titulo">
-                        10
-                    </h4>
-                    <H4 class="repo Centrar-Titulo">
-                        0
-                    </H4>
-                    <H4 class="NF Centrar-Titulo">
-                        10.00
-                    </H4>
-                </div> <!-- FIN DE PRIMER MATERIA-->
-
-                <div class="container oculto">
-                    <h4 class="item1">
-                        MATEMATICA I
-                    </h4>
-                    <!-- LABORATORIOS-->
-                    <h4 class="lab1 Centrar-Titulo">
-                        10
-                    </h4>
-                    <h4 class="lab2 Centrar-Titulo">
-                        10
-                    </h4>
-                    <h4 class="lab3 Centrar-Titulo">
-                        10
-                    </h4>
-                    <!-- PARCIALES-->
-                    <h4 class="parcial1 Centrar-Titulo">
-                        10
-                    </h4>
-                    <h4 class="parcial2 Centrar-Titulo">
-                        10
-                    </h4>
-                    <h4 class="parcial3 Centrar-Titulo">
-                        10
-                    </h4>
-                    <H4 class="repo Centrar-Titulo">
-                        0
-                    </H4>
-                    <H4 class="NF Centrar-Titulo">
-                        10.00
-                    </H4>
-                </div>
-
-                <div class="container oculto">
-                    <h4 class="item1">
-                        PSICOLOGIA GENERAL
-                    </h4>
-                    <!-- LABORATORIOS-->
-                    <h4 class="lab1 Centrar-Titulo">
-                        10
-                    </h4>
-                    <h4 class="lab2 Centrar-Titulo">
-                        10
-                    </h4>
-                    <h4 class="lab3 Centrar-Titulo">
-                        10
-                    </h4>
-                    <!-- PARCIALES-->
-                    <h4 class="parcial1 Centrar-Titulo">
-                        10
-                    </h4>
-                    <h4 class="parcial2 Centrar-Titulo">
-                        10
-                    </h4>
-                    <h4 class="parcial3 Centrar-Titulo">
-                        10
-                    </h4>
-                    <H4 class="repo Centrar-Titulo">
-                        0
-                    </H4>
-                    <H4 class="NF Centrar-Titulo">
-                        10.00
-                    </H4>
-                </div>
-            
-
-                <div class="container oculto">
-                    <h4 class="item1">
-                        ECONOMIA I
-                    </h4>
-                    <!-- LABORATORIOS-->
-                    <h4 class="lab1 Centrar-Titulo">
-                        10
-                    </h4>
-                    <h4 class="lab2 Centrar-Titulo">
-                        10
-                    </h4>
-                    <h4 class="lab3 Centrar-Titulo">
-                        10
-                    </h4>
-                    <!-- PARCIALES-->
-                    <h4 class="parcial1 Centrar-Titulo">
-                        10
-                    </h4>
-                    <h4 class="parcial2 Centrar-Titulo">
-                        10
-                    </h4>
-                    <h4 class="parcial3 Centrar-Titulo">
-                        10
-                    </h4>
-                    <H4 class="repo Centrar-Titulo">
-                        0
-                    </H4>
-                    <H4 class="NF Centrar-Titulo">
-                        10.00
-                    </H4>
-                </div>
-            </nav>
-        </div>
     </div> 
-
         <nav class="items">
             <div class="container oculto">
                 <h4 class="item1">
@@ -828,10 +655,6 @@
                     10.00
                 </H4>
             </div>
-        </nav>
-
-            <!-- SCRIPT PARA SELECCIONAR CICLO-->
-            
-        
+        </nav>     
 </body>
 </html>
