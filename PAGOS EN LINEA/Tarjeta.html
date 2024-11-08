@@ -7,32 +7,30 @@
     <link rel="stylesheet" href="Pagos.css">
 </head>
 <body>
-    <div class="payment-item" style="text-align: center;">
-        <label>
-            <input type="checkbox" class="payment-checkbox" data-amount="94.00"> Cuota #4: $88.00 +
-        </label>
-        <div>Recargo por Mora: $6.00</div>
-        <div style="color: red;">Cuota Vencida: 17/10/2024</div>
-    </div>
-
-    <div class="payment-item" style="text-align: center;">
-        <label>
-            <input type="checkbox" class="payment-checkbox" data-amount="94.00"> Cuota #5: $88.00 +
-        </label>
-        <div>Recargo por Mora: $6.00</div>
-        <div>Fecha de Vencimiento: 17/11/2024</div>
-    </div>
-
-    <div class="total" style="text-align: center;">
-        Total a Pagar: $<span id="totalAmount">0.00</span>
-        <div> <br>
-            <button id="payButton">
-                Pagar</button>
-        </div> 
-    </div>
-
+    <div class="container">
+        <div class="payment-item" style="text-align: center;">
+            <label>
+                <input type="checkbox" class="payment-checkbox" data-amount="94.00"> Cuota #4: $88.00 +
+            </label>
+            <div>Recargo por Mora: $6.00</div>
+            <div style="color: red;">Cuota Vencida: 17/10/2024</div>
+        </div>
     
-
+        <div class="payment-item" style="text-align: center;">
+            <label>
+                <input type="checkbox" class="payment-checkbox" data-amount="94.00"> Cuota #5: $88.00 +
+            </label>
+            <div>Recargo por Mora: $6.00</div>
+            <div>Fecha de Vencimiento: 17/11/2024</div>
+        </div>
+        <div class="total" style="text-align: center;">
+            Total a Pagar: $<span id="totalAmount">0.00</span>
+            <div> <br>
+                <button id="payButton">
+                    Pagar</button>
+            </div> 
+        </div>
+    </div>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
         const checkboxes = document.querySelectorAll('.payment-checkbox');
@@ -57,6 +55,113 @@
             // Aquí puedes agregar la lógica para procesar el pago
         });
     });
+    </script>
+    <div class="container">
+        <h1>Realizar Pago</h1>
+        <div class="resumen">
+            <p>Sub Total: <span id="subTotal">$100.00</span></p>
+            <p>Total: <span id="total">$100.00</span></p>
+        </div>
+
+        <form id="formPago">
+            <label for="numeroTarjeta">Número de la tarjeta:</label>
+            <input type="text" id="numeroTarjeta" name="numeroTarjeta" required><br><br>
+
+            <label for="nombreTitular">Nombre del titular de la tarjeta:</label>
+            <input type="text" id="nombreTitular" name="nombreTitular" required><br><br>
+
+            <label for="fechaVencimiento">Fecha de Vencimiento (mm/aa):</label>
+            <input type="text" id="fechaVencimiento" name="fechaVencimiento" placeholder="mm/aa" required><br><br>
+
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" name="cvv" required><br><br>
+
+            <button type="button" onclick="procesarPago()">Realizar Pago</button>
+        </form>
+
+        <div class="tarjetas">
+            Aceptamos:
+            <img src="visa.png" alt="Visa">
+            <img src="mastercard.png" alt="Mastercard">
+            <img src="amex.png" alt="American Express">
+        </div>
+    </div>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+.resumen {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type=text] {
+    width: calc(100% - 10px);
+    padding: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.tarjetas {
+    text-align: center;
+}
+
+.tarjetas img {
+    width: 30px; /* Ajusta el tamaño según sea necesario */
+}
+    </style>
+    <script>
+        function procesarPago() {
+    const numeroTarjeta = document.getElementById('numeroTarjeta').value;
+    const nombreTitular = document.getElementById('nombreTitular').value;
+    const fechaVencimiento = document.getElementById('fechaVencimiento').value;
+    const cvv = document.getElementById('cvv').value;
+
+    if (numeroTarjeta && nombreTitular && fechaVencimiento && cvv) {
+        alert("Pago procesado con éxito!\n\nDetalles:\nNúmero de tarjeta: " + numeroTarjeta + "\nNombre del titular: " + nombreTitular);
+        // Aquí puedes agregar más lógica para manejar el pago real.
+        
+        // Resetear el formulario después del pago
+        document.getElementById('formPago').reset();
+        
+        // Actualizar resumen si es necesario
+        document.getElementById('subTotal').innerText = "$0.00";
+        document.getElementById('total').innerText = "$0.00";
+        
+    } else {
+        alert("Por favor, completa todos los campos.");
+    }
+}
     </script>
 </body>
 </html>
