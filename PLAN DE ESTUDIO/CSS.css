@@ -148,7 +148,6 @@ body{
         cursor: pointer;
         gap: 0.4rem;
         font-weight: bold;
-        border-radius: 30px;
         text-shadow: 2px 2px 3px rgb(136 0 136 / 50%);
         background: linear-gradient(15deg, #880088, #aa2068, #cc3f47, #de6f3d, #f09f33, #de6f3d, #cc3f47, #aa2068, #880088) no-repeat;
         background-size: 300%;
