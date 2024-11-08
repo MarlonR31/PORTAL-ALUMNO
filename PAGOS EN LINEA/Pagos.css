@@ -1,0 +1,17 @@
+h3{
+    text-align: center;
+    background-color: rgb(93, 113, 230);
+}
+body {
+    font-family: Arial, sans-serif;
+}
+
+.payment-item {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+.total {
+    font-weight: bold;
+    margin-top: 20px;
+}

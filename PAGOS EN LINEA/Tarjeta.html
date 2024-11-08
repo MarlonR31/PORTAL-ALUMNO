@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarjeta</title>
+    <link rel="stylesheet" href="Pagos.css">
+</head>
+<body>
+    <div class="payment-item" style="text-align: center;">
+        <label>
+            <input type="checkbox" class="payment-checkbox" data-amount="94.00"> Cuota #4: $88.00 +
+        </label>
+        <div>Recargo por Mora: $6.00</div>
+        <div style="color: red;">Cuota Vencida: 17/10/2024</div>
+    </div>
+
+    <div class="payment-item" style="text-align: center;">
+        <label>
+            <input type="checkbox" class="payment-checkbox" data-amount="94.00"> Cuota #5: $88.00 +
+        </label>
+        <div>Recargo por Mora: $6.00</div>
+        <div>Fecha de Vencimiento: 17/11/2024</div>
+    </div>
+
+    <div class="total" style="text-align: center;">
+        Total a Pagar: $<span id="totalAmount">0.00</span>
+        <div> <br>
+            <button id="payButton">
+                Pagar</button>
+        </div> 
+    </div>
+
+    
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+        const checkboxes = document.querySelectorAll('.payment-checkbox');
+        const totalAmountElement = document.getElementById('totalAmount');
+
+        checkboxes.forEach(checkbox => {
+            checkbox.addEventListener('change', calculateTotal);
+        });
+
+        function calculateTotal() {
+            let total = 0;
+            checkboxes.forEach(checkbox => {
+                if (checkbox.checked) {
+                    total += parseFloat(checkbox.getAttribute('data-amount'));
+                }
+            });
+            totalAmountElement.textContent = total.toFixed(2);
+        }
+
+        document.getElementById('payButton').addEventListener('click', function() {
+            alert(`Total a pagar: $${totalAmountElement.textContent}`);
+            // Aquí puedes agregar la lógica para procesar el pago
+        });
+    });
+    </script>
+</body>
+</html>
