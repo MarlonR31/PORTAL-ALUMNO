@@ -141,7 +141,7 @@ body{
     }
 }
 
-        .button {
+.button {
         width: 100%;
         display: flex;
         padding: 1.2em 1rem;
@@ -154,7 +154,6 @@ body{
         background-size: 300%;
         color: #fff;
         border: none;
-        background-position: left center;
         box-shadow: 0 30px 10px -20px rgba(0,0,0,.2);
         }
 
