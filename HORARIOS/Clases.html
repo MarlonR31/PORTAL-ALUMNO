@@ -20,44 +20,81 @@
         }
         div {
             text-align: center;
-            height: 45px;
+            height: 70px;
+        }
+        button {
+            padding: 8px 12px;
+            font-size: 14px;
+            cursor: pointer;
         }
     </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.8/jspdf.plugin.autotable.min.js"></script>
+    
 </head>
 <body>
     <div>
         <div>
             <button>Exel</button>
-            <button>PDF</button><br>
+            <button id="downloadBtn">PDF</button><br>
             <a>
                 Buscar: <input>
             </a>
         </div>
-        
     </div>
-    <table>
-       <thead>
-            <tr>
-                <th>ASIGNATURA</th>
-                <th>CATEDRÁTICO/A</th>
-                <th>GRUPO</th>
-                <th>DIAS</th>
-                <th>AULA</th>
-                <th>HORA</th>
-            </tr>
-       </thead>
-       <tbody>
-            <tr>
-                <td>PROGRAMACION WEB I</td><td>ING NESTOR RIVAS</td><td>SECCIÓN B</td><td>M - J</td>
-            </tr>
-            <tr>
-                <td>INFORMÁTICA FORENCE</td><td>ING WILLIAN SANDOVAL</td><td>SECCIÓN A</td><td>L - M</td>
-            </tr>
-            <tr>
-                <td>MARTES</td><td>ING JOSE</td><td>SECCIÓN A</td><td>M -V</td>
-            </tr>
-       </tbody>
-    </table>
+    <div id="content">
+        <table id="myTable">
+            <thead>
+                 <tr>
+                     <th>ASIGNATURA</th>
+                     <th>CATEDRÁTICO/A</th>
+                     <th>GRUPO</th>
+                     <th>DIAS</th>
+                     <th>AULA</th>
+                     <th>HORA</th>
+                 </tr>
+            </thead>
+            <tbody>
+                 <tr>
+                     <td>PROGRAMACION WEB I</td><td>ING NESTOR RIVAS</td><td>SECCIÓN B</td><td>M - J</td>
+                 </tr>
+                 <tr>
+                     <td>INFORMÁTICA FORENCE</td><td>ING WILLIAN SANDOVAL</td><td>SECCIÓN A</td><td>L - M</td>
+                 </tr>
+                 <tr>
+                     <td>MARTES</td><td>ING JOSE</td><td>SECCIÓN A</td><td>M -V</td>
+                 </tr>
+            </tbody>
+        </table>     
+    </div>
     
+    <script>
+        document.getElementById("downloadBtn").addEventListener("click", function () {
+            const { jsPDF } = window.jspdf;
+        
+            // Crear una instancia de jsPDF
+            const doc = new jsPDF();
+            // Agregar título al PDF
+            doc.text("HORARIOS DE CLASES", 20, 10);
+            // Agregar contenido textual
+            doc.text("Creado por: Marlon Ramos", 10, 20);
+
+        
+            // Obtener el contenido del div
+            const content = document.getElementById("content").innerHTML;
+        
+            // Dividir el contenido en líneas y agregar al PDF
+            const lines = content.split(/<\/?p>/).filter(line => line.trim() !== '');
+            
+            let verticalOffset = 10; // Offset vertical inicial
+            lines.forEach((line) => {
+                doc.text(line.replace(/<[^>]*>/g, ""), 10, verticalOffset); // Remover etiquetas HTML
+                verticalOffset += 10; // Aumentar el offset para la siguiente línea
+            });
+        
+            // Descargar el PDF con un nombre específico
+            doc.save("documento.pdf");
+        });
+    </script>
 </body>
 </html>
