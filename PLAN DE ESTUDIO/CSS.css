@@ -121,25 +121,7 @@ body{
     display: flex; /* Usa flexbox para dividir el espacio */
     height: 9vh; /* Altura completa de la ventana */
 }
-.centro{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 1vh;
-}
 
-
-.ciclo1
-{
-    .facultad
-    {
-        width: 25;
-    }
-    .ingenieria
-    {
-        width: 25;
-    }
-}
 
 .button {
         width: 100%;
