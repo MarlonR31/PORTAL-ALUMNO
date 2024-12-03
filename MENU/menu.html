@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generar PDF con Tabla</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        #content {
+            padding: 20px;
+            border: 1px solid #ccc;
+            background-color: #fff;
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        button {
+            padding: 10px 15px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div id="content">
+    <h1>Título del Documento</h1>
+    <p>Este es un párrafo que se incluirá en el PDF. A continuación, se muestra una tabla:</p>
+    
+    <table id="myTable">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Edad</th>
+                <th>Ciudad</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Alice</td>
+                <td>30</td>
+                <td>Nueva York</td>
+            </tr>
+            <tr>
+                <td>Bob</td>
+                <td>25</td>
+                <td>Los Ángeles</td>
+            </tr>
+            <tr>
+                <td>Charlie</td>
+                <td>35</td>
+                <td>Chicago</td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>
+
+<button id="downloadBtn">Descargar PDF</button>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.8/jspdf.plugin.autotable.min.js"></script>
+
+<script>
+// Crear una función para generar el PDF
+document.getElementById("downloadBtn").addEventListener("click", function () {
+    const { jsPDF } = window.jspdf;
+
+    // Crear una instancia de jsPDF
+    const doc = new jsPDF();
+
+    // Agregar título al PDF
+    doc.text("Título del Documento", 10, 10);
+
+    // Agregar contenido textual
+    doc.text("Este es un párrafo que se incluirá en el PDF.", 10, 20);
+
+    // Usar autoTable para agregar la tabla al PDF
+    doc.autoTable({ 
+        html: '#myTable',
+        startY: 30 // Comenzar la tabla un poco más abajo
+    });
+
+    // Descargar el PDF con un nombre específico
+    doc.save("documento_con_tabla.pdf");
+});
+</script>
+
+</body>
+</html>
