@@ -1,5 +1,6 @@
 /* From Uiverse.io by StealthWorm */ 
-.btn {
+.btn 
+{
     display: flex;
     justify-content: center;
     align-items: center;
