@@ -15,7 +15,6 @@
             display: none; /* Oculta los elementos por defecto */
         }
     </style>
-
 </head>
 
 <body class="Body">
@@ -71,6 +70,42 @@
             </tbody>
         </table>
     </div>
+
+    <div class="ocultar" id="contenidoOpcion2" style="background-color: antiquewhite;">
+        <table>
+            <thead>
+                <tr>
+                    <th onclick="sortTable(0)">ASIGNATURA</th>
+                    <th onclick="sortTable(1)">LAB1</th>
+                    <th onclick="sortTable(2)">LAB2</th>
+                    <th onclick="sortTable(3)">LAb3</th>
+                    <th onclick="sortTable(4)">PAR1</th>
+                    <th onclick="sortTable(5)">PAR2</th>
+                    <th onclick="sortTable(6)">PAR3</th>
+                    <th onclick="sortTable(7)">REPO</th>
+                    <th onclick="sortTable(8)">NF</th>
+                </tr>
+            </thead>
+            <tbody> <!--RECORD ACADEMICO-->
+                <tr>
+                    <td>INFORMATICA</td><td>10</td><td>10</td><td>10</td><td>9</td><td>8</td><td>10</td><td>0</td><td>9.00</td>
+                </tr>
+                <tr>
+                    <td>CONTABILIDAD</td><td>10</td><td>9</td><td>10</td><td>9</td><td>8.60</td><td>10</td><td>0</td><td>9.00</td>
+                </tr>
+                <tr>
+                    <td>MATEMATICA I</td><td>10</td><td>8</td><td>10</td><td>8</td><td>7.50</td><td>9</td><td>0</td><td>8.00</td>
+                </tr>
+                <tr>
+                    <td>ECONOMIA I</td><td>9</td><td>8</td><td>10</td><td>8</td><td>8.90</td><td>9</td><td>0</td><td>9.00</td>
+                </tr>
+                <tr>
+                    <td>PSICOLOGIA</td><td>8</td><td>9</td><td>10</td><td>8</td><td>7.90</td><td>9</td><td>0</td><td>9.00</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
         <nav class="items">
             <div class="oculto" id="contenidoOpcion">
                 <div class="container">
@@ -458,7 +493,7 @@
 
                 // Ocultar todos los contenidos
                 document.getElementById('contenidoOpcion1').classList.add('ocultar');
-                document.getElementById('contenidoOpcion2').classList.add('oculto');
+                document.getElementById('contenidoOpcion2').classList.add('ocultar');
                 document.getElementById('contenidoOpcion3').classList.add('oculto');
                 document.getElementById('contenidoOpcion4').classList.add('oculto');
                 document.getElementById('contenidoOpcion5').classList.add('oculto');
