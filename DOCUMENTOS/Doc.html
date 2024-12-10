@@ -7,10 +7,38 @@
 </head>
 <body>
     <div>
-        <div>
+        <div style="text-align: center; margin: 15px;">
             <th>
             <button>EXEL</button>
             <button>PDF</button>
+        </div>
+        <div style="text-align: center; margin: 15px;">
+            <button onclick="buscar()">Buscar:</button>
+            <input type="text" id="buscar" placeholder="Ingrese la busqueda...">
+            <script>
+                function buscar() {
+                // Obtener el valor del input de búsqueda
+                let input = document.getElementById('buscar');
+                let filter = input.value.toUpperCase();
+          
+                // Obtener la tabla y todas las filas
+                let table = document.getElementById("myTable");
+                let tr = table.getElementsByTagName("tr");
+          
+                // Recorrer todas las filas y ocultar las que no coincidan con la búsqueda
+                for (let i = 0; i < tr.length; i++) {
+                    let td = tr[i].getElementsByTagName("td")[0];
+                    if (td) {
+                        let txtValue = td.textContent || td.innerText;
+                        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                            tr[i].style.display = "";
+                        } else {
+                            tr[i].style.display = "none";
+                        }
+                    }
+                }
+              }
+              </script>
         </div>
     </div>
 </body>
