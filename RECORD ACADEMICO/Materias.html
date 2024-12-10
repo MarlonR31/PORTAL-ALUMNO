@@ -19,17 +19,18 @@ th {
   cursor: pointer; /* Indicar que se puede hacer clic */
 }
 </style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 </head>
 <body>
   <div style="text-align: center; margin: 15px;">
-    <button>Exel</button>
-    <button>PDF</button>
+    <button onclick="descargarComoExcel()">Exel</button>
+    <button onclick="imprimirTabla()">PDF</button>
   </div>
   <div style="text-align: center; margin: 15px;">
     <button onclick="buscar()">Buscar:</button>
     <input type="text" id="buscar" placeholder="Ingrese la busqueda...">
     
-    <script>
+    <script> <!-- BUSCAR--> 
       function buscar() {
       // Obtener el valor del input de búsqueda
       let input = document.getElementById('buscar');
@@ -53,6 +54,68 @@ th {
       }
     }
     </script>
+
+    <script>
+      function imprimirTabla() {
+        // Selecciona la tabla por su ID (asegúrate de que tu tabla tenga un ID asignado)
+        var tabla = document.getElementById('myTable'); 
+
+        // Crea un nuevo elemento iframe invisible
+        var iframe = document.createElement('iframe');
+        iframe.style.position = 'fixed';
+        iframe.style.top = '-1000px';
+        iframe.style.left = '-1000px';
+        document.body.appendChild(iframe);
+
+        // Obtiene el documento del iframe
+        var doc = iframe.contentDocument || iframe.contentWindow.document;
+
+        // Clona la tabla y la agrega al documento del iframe
+        var tablaClonada = tabla.cloneNode(true);
+        doc.body.appendChild(tablaClonada);
+
+        // Ajusta el tamaño de la página para que se ajuste a la tabla (opcional)
+        doc.body.style.width = tabla.offsetWidth + 'px';
+        doc.body.style.height = tabla.offsetHeight + 'px';
+
+        // Imprime el contenido del iframe
+        iframe.contentWindow.print();
+
+        // Elimina el iframe
+        document.body.removeChild(iframe);
+      }
+    </script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+
+<script>
+    function descargarComoExcel() {
+      // Selecciona la tabla
+      var tabla = document.getElementById('myTable');
+
+      // Convierte la tabla a un array de objetos
+      var data = [];
+      var rows = tabla.querySelectorAll('tr');
+      for (var i = 1; i < rows.length; i++) { // Comenzamos en 1 para omitir el encabezado
+        var row = {};
+        var cols = rows[i].querySelectorAll('td, th');
+        cols.forEach((col, j) => {
+          row[j] = col.innerText;
+        });
+        data.push(row);
+      }
+
+      // Crea el workbook de Excel
+      var wb = XLSX.utils.book_new();
+      var ws = XLSX.utils.json_to_sheet(data);
+      XLSX.utils.book_append_sheet(wb, ws, "Hoja1");
+
+      // Genera el archivo Excel
+      XLSX.writeFile(wb, 'miTabla.xlsx');
+    }
+</script>
+    
   </div>
 
     <table id="myTable">
